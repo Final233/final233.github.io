@@ -1,0 +1,2996 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>docker----1基础命令 | Final233</title>
+  <meta name="keywords" content=" linux , docker ">
+  <meta name="description" content="docker----1基础命令 | Final233">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="页面未找到！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="http://example.com/404.html">
+<meta property="og:site_name" content="Final233">
+<meta property="og:description" content="页面未找到！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-09-27T06:07:13.000Z">
+<meta property="article:modified_time" content="2019-09-27T06:12:41.000Z">
+<meta property="article:author" content="Final233">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Final233" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Final233</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/final233"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="csdn"
+               href="http://cnblogs.com/fina"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-csdn"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:438803792@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=438803792&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=121232718"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(151)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="工具">
+                        
+                        工具
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Linux
+                        <small>(147)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Linux<--->ansible">
+                                        
+                                        ansible
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->docker">
+                                        
+                                        docker
+                                        
+                                            <small>(6
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->haproxy">
+                                        
+                                        haproxy
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->httpd">
+                                        
+                                        httpd
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->keepalived">
+                                        
+                                        keepalived
+                                        
+                                            <small>(3
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->kubernetes">
+                                        
+                                        kubernetes
+                                        
+                                            <small>(5
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->mysql">
+                                        
+                                        mysql
+                                        
+                                            <small>(19
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->nginx">
+                                        
+                                        nginx
+                                        
+                                            <small>(7
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->openstack">
+                                        
+                                        openstack
+                                        
+                                            <small>(12
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->redis">
+                                        
+                                        redis
+                                        
+                                            <small>(6
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->shell">
+                                        
+                                        shell
+                                        
+                                            <small>(7
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="test">
+                        
+                        test
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Windows">
+                        
+                        Windows
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="151">
+<input type="hidden" id="yelog_site_word_count" value="384.9k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>$PATH</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二进制日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>慢查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aide</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>alias</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ansible</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>at</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>awk</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bind</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bond</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bridge</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>busybox</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>case</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chgrp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chmod</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chrony</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cobbler</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cron</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cut</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>date</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>dhcpd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>dig</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>dropbear</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Engine</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>expect</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>find</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>firewalld</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>for</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ftp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>function</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FUNCTION</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>galera cluster</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>getfacl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grant</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grep</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grub</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grub2</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>gz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>haproxy</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>help</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>history</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>httpd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hwclock</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>if</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>index</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>inotify</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iptables</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ipvsadm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>join</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>keepalived</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kickstart</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ks8</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kubernetes</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kvm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lamp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ln</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>locate</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lock</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>logrotate</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ls</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lvs</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>make</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>man</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mariadb</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mha</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mkdir</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mtr</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mv</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mysql</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mysqldump</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mysqlslap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nfs</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nginx</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nmcli</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nslookup</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>openssh</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>openssl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>openstack</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pam</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>passwd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pkg</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>playbook</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>powerdns</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PROCEDURE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PS1</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pwd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Query cache</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>redis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rpm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rsync</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rsyslog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>samba</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>scp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>screen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sed</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>select</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>seq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>setfacl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sftp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>soft</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>su</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sudo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>systemd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>table</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tar</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcpdmatch</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcpdump</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>team</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>telnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>test</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tftp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>timedatectl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tools</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tr</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tracepath</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>traceroute</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Transactions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>trap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tree</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>TRIGGER</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>uniq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>useradd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>view</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>visudo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>vnc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>whatis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>while</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>windows</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>wrappers</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>xtrabackup</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>xz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>yum</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>zip</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E6%95%B0%E7%BB%84/"
+           data-tag="linux,shell"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell数组">linux基础----shell数组</span>
+            <span class="post-date" title="2021-07-07 16:31:54">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----6cluster/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----6cluster">redis----6cluster</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----4%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----4消息队列">redis----4消息队列</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----5%E4%B8%BB%E4%BB%8E/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----5主从">redis----5主从</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----2%E9%83%A8%E7%BD%B2%E5%8F%8A%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----2部署及配置">redis----2部署及配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----3%E6%8C%81%E4%B9%85%E5%8C%96%E5%8F%8A%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----3持久化及数据类型">redis----3持久化及数据类型</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----1%E7%BC%93%E5%AD%98%E6%A6%82%E5%BF%B5/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----1缓存概念">redis----1缓存概念</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/nginx----5%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----5反向代理">nginx----5反向代理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/nginx----%E9%80%9F%E6%9F%A5/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----速查">nginx----速查</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/nginx----4Rewrite/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----4Rewrite">nginx----4Rewrite</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/nginx----3%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----3高级配置">nginx----3高级配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/nginx----2%E5%9F%BA%E7%A1%80/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----2基础">nginx----2基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----9%E4%BA%8B%E5%8A%A1/"
+           data-tag="linux,mariadb,mysql,Transactions,lock"
+           data-author="" >
+            <span class="post-title" title="mariadb----9事务">mariadb----9事务</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/nginx----1%E5%8E%9F%E7%90%86/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----1原理">nginx----1原理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----7%E6%9F%A5%E8%AF%A2%E7%BC%93%E5%AD%98/"
+           data-tag="linux,mariadb,mysql,Query cache"
+           data-author="" >
+            <span class="post-title" title="mariadb----7查询缓存">mariadb----7查询缓存</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----8%E7%B4%A2%E5%BC%95/"
+           data-tag="linux,mariadb,mysql,index"
+           data-author="" >
+            <span class="post-title" title="mariadb----8索引">mariadb----8索引</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----5%E8%A7%86%E5%9B%BE%E3%80%81%E5%87%BD%E6%95%B0%E3%80%81%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E3%80%81%E8%A7%A6%E5%8F%91%E5%99%A8%E3%80%81%20%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
+           data-tag="linux,mariadb,mysql,view,PROCEDURE,grant,FUNCTION,TRIGGER"
+           data-author="" >
+            <span class="post-title" title="mariadb----5视图、函数、存储过程、触发器、 权限管理">mariadb----5视图、函数、存储过程、触发器、 权限管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----6%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/"
+           data-tag="linux,mariadb,mysql,Engine"
+           data-author="" >
+            <span class="post-title" title="mariadb----6存储引擎">mariadb----6存储引擎</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----3%E5%A4%9A%E5%AE%9E%E4%BE%8B/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----3多实例">mariadb----3多实例</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----4SQL%E8%AF%AD%E5%8F%A5/"
+           data-tag="linux,mariadb,mysql,table,join"
+           data-author="" >
+            <span class="post-title" title="mariadb----4SQL语句">mariadb----4SQL语句</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----2%E5%AE%89%E8%A3%85/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----2安装">mariadb----2安装</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----19%E6%80%A7%E8%83%BD%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A0%87/"
+           data-tag="linux,mariadb,mysql,mysqlslap"
+           data-author="" >
+            <span class="post-title" title="mariadb----19性能衡量指标">mariadb----19性能衡量指标</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----1%E5%9F%BA%E7%A1%80/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----1基础">mariadb----1基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----17MHA/"
+           data-tag="linux,mariadb,mysql,mha"
+           data-author="" >
+            <span class="post-title" title="mariadb----17MHA">mariadb----17MHA</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----18GaleraCluster/"
+           data-tag="linux,mariadb,mysql,galera cluster"
+           data-author="" >
+            <span class="post-title" title="mariadb----18Galera Cluster">mariadb----18Galera Cluster</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----15%E5%AE%89%E5%85%A8%E5%A4%8D%E5%88%B6/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----15安全复制">mariadb----15安全复制</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----16%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----16读写分离">mariadb----16读写分离</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----14%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B62/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----14主从复制2">mariadb----14主从复制2</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----13%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B61/"
+           data-tag="linux,mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----13主从复制1">mariadb----13主从复制1</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----12xtrabackup/"
+           data-tag="linux,mariadb,mysql,xtrabackup"
+           data-author="" >
+            <span class="post-title" title="mariadb----12xtrabackup">mariadb----12xtrabackup</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----11%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D/"
+           data-tag="linux,mariadb,mysql,mysqldump"
+           data-author="" >
+            <span class="post-title" title="mariadb----11备份和恢复">mariadb----11备份和恢复</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/llinux%E6%9C%8D%E5%8A%A1----VNC/"
+           data-tag="linux,vnc"
+           data-author="" >
+            <span class="post-title" title="linux服务----VNC">linux服务----VNC</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux mysql "
+           href="/2021/07/07/mariadb----10%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86/"
+           data-tag="linux,mariadb,mysql,日志,事务日志,慢查询,二进制日志"
+           data-author="" >
+            <span class="post-title" title="mariadb----10日志管理">mariadb----10日志管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----%E4%B8%BB%E4%BB%8E%E3%80%81%E5%AD%90%E5%9F%9F%E3%80%81%E8%BD%AC%E5%8F%91/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux服务----主从、子域、转发">linux服务----主从、子域、转发</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----%E5%AE%9E%E7%8E%B0Internet-DNS%E6%9E%B6%E6%9E%84/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux服务----实现Internet DNS架构">linux服务----实现Internet DNS架构</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----SAMBA/"
+           data-tag="linux,samba"
+           data-author="" >
+            <span class="post-title" title="linux服务----SAMBA">linux服务----SAMBA</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----rsync/"
+           data-tag="linux,rsync,inotify"
+           data-author="" >
+            <span class="post-title" title="linux服务----rsync">linux服务----rsync</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----PXE/"
+           data-tag="linux,http,kickstart,dhcpd,tftp"
+           data-author="" >
+            <span class="post-title" title="linux服务----PXE">linux服务----PXE</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----NFS/"
+           data-tag="linux,nfs"
+           data-author="" >
+            <span class="post-title" title="linux服务----NFS">linux服务----NFS</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----powerdns/"
+           data-tag="linux,powerdns"
+           data-author="" >
+            <span class="post-title" title="linux服务----powerdns">linux服务----powerdns</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux nginx "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----LNMP/"
+           data-tag="linux,nginx"
+           data-author="" >
+            <span class="post-title" title="linux服务----LNMP">linux服务----LNMP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----LVS/"
+           data-tag="linux,lvs,ipvsadm"
+           data-author="" >
+            <span class="post-title" title="linux服务----LVS">linux服务----LVS</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----KVM/"
+           data-tag="linux,kvm"
+           data-author="" >
+            <span class="post-title" title="linux服务----KVM">linux服务----KVM</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----LAMP/"
+           data-tag="linux,lamp"
+           data-author="" >
+            <span class="post-title" title="linux服务----LAMP">linux服务----LAMP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----iptables/"
+           data-tag="linux,iptables"
+           data-author="" >
+            <span class="post-title" title="linux服务----iptables">linux服务----iptables</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----firewalld/"
+           data-tag="linux,firewalld"
+           data-author="" >
+            <span class="post-title" title="linux服务----firewalld">linux服务----firewalld</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----FTP/"
+           data-tag="linux,ftp"
+           data-author="" >
+            <span class="post-title" title="linux服务----FTP">linux服务----FTP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----cdn/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux服务----CDN">linux服务----CDN</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----cobbler/"
+           data-tag="linux,cobbler"
+           data-author="" >
+            <span class="post-title" title="linux服务----cobbler">linux服务----cobbler</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E9%80%BB%E8%BE%91%E5%8D%B7/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----逻辑卷">linux基础----逻辑卷</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----bind/"
+           data-tag="linux,bind"
+           data-author="" >
+            <span class="post-title" title="linux服务----bind">linux服务----bind</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/"
+           data-tag="linux,rpm,make,pkg"
+           data-author="" >
+            <span class="post-title" title="linux基础----软件包管理">linux基础----软件包管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E3%80%81%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----进程管理">linux基础----进程管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%B7%AF%E7%94%B1%E8%A1%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,nmcli"
+           data-author="" >
+            <span class="post-title" title="linux基础----路由表和网络配置">linux基础----路由表和网络配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络设备工作原理">linux基础----网络设备工作原理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/"
+           data-tag="linux,at,cron"
+           data-author="" >
+            <span class="post-title" title="linux基础----计划任务">linux基础----计划任务</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"
+           data-tag="linux,mtr,traceroute,tracepath,dig,nslookup"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络工具">linux基础----网络工具</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80/"
+           data-tag="linux,nc,telnet"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络工具瑞士军刀">linux基础----网络工具瑞士军刀</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BB%88%E7%AB%AF%E9%A2%9C%E8%89%B2/"
+           data-tag="linux,PS1"
+           data-author="" >
+            <span class="post-title" title="linux基础----终端颜色">linux基础----终端颜色</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%92%8C%E7%AE%A1%E7%90%86/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络协议和管理">linux基础----网络协议和管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1systemd/"
+           data-tag="linux,systemd"
+           data-author="" >
+            <span class="post-title" title="linux基础----管理系统服务systemd">linux基础----管理系统服务systemd</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----系统启动流程">linux基础----系统启动流程</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----磁盘分区">linux基础----磁盘分区</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%A3%81%E7%9B%98%E5%AD%98%E5%82%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----磁盘存储">linux基础----磁盘存储</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
+           data-tag="linux,useradd,chmod,passwd,chgrp,chown,setfacl,getfacl"
+           data-author="" >
+            <span class="post-title" title="linux基础----权限管理">linux基础----权限管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%A0%87%E5%87%86IO%E5%92%8C%E7%AE%A1%E9%81%93/"
+           data-tag="linux,seq,tr"
+           data-author="" >
+            <span class="post-title" title="linux基础----标准I/O和管道">linux基础----标准I/O和管道</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%97%B6%E9%97%B4/"
+           data-tag="linux,date,hwclock,timedatectl,cal"
+           data-author="" >
+            <span class="post-title" title="linux基础----时间/时钟同步/时区/日历">linux基础----时间/时钟同步/时区/日历</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"
+           data-tag="linux,cut,uniq"
+           data-author="" >
+            <span class="post-title" title="linux基础----文本处理工具">linux基础----文本处理工具</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86/"
+           data-tag="linux,logrotate,rsyslog"
+           data-author="" >
+            <span class="post-title" title="linux基础----日志管理">linux基础----日志管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/"
+           data-tag="linux,pwd,ls,rm,cp,mv,ln,mkdir,tree"
+           data-author="" >
+            <span class="post-title" title="linux基础----文件管理">linux基础----文件管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----文件系统">linux基础----文件系统</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%AE%9A%E5%88%B6linux/"
+           data-tag="linux,busybox"
+           data-author="" >
+            <span class="post-title" title="linux基础----定制linux">linux基础----定制linux</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/"
+           data-tag="linux,locate,find"
+           data-author="" >
+            <span class="post-title" title="linux基础----文件查找">linux基础----文件查找</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%91%BD%E4%BB%A4%E4%BC%98%E5%85%88%E7%BA%A7/"
+           data-tag="linux,help,bash,alias,hash,$PATH"
+           data-author="" >
+            <span class="post-title" title="linux基础----内部命令/外部命令/别名/清空命令缓存表">linux基础----内部命令/外部命令/别名/清空命令缓存表</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8E%86%E5%8F%B2/"
+           data-tag="linux,history"
+           data-author="" >
+            <span class="post-title" title="linux基础----命令行历史">linux基础----命令行历史</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"
+           data-tag="linux,tar,xz,zip,gz"
+           data-author="" >
+            <span class="post-title" title="linux基础----压缩工具">linux基础----压缩工具</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----内存带宽">linux基础----内存带宽</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%8A%A0%E5%AF%86%E5%92%8C%E5%AE%89%E5%85%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----加密和安全">linux基础----加密和安全</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----yum/"
+           data-tag="linux,yum"
+           data-author="" >
+            <span class="post-title" title="linux基础----yum">linux基础----yum</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----TCP_Wrappers/"
+           data-tag="linux,tcpdmatch,wrappers"
+           data-author="" >
+            <span class="post-title" title="linux基础----TCP_Wrappers">linux基础----TCP_Wrappers</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----TCPIP%E5%8D%8F%E8%AE%AE%E6%A0%88/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----TCP/IP协议栈">linux基础----TCP/IP协议栈</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----sudo/"
+           data-tag="linux,su,sudo,visudo,aide"
+           data-author="" >
+            <span class="post-title" title="linux基础----sudo">linux基础----sudo</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----tcpdump/"
+           data-tag="linux,tcpdump"
+           data-author="" >
+            <span class="post-title" title="linux基础----抓包工具tcpdump">linux基础----抓包工具tcpdump</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E9%80%9F%E6%9F%A5/"
+           data-tag="linux,bash"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell速查">linux基础----shell速查</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%9F%BA%E7%A1%80/"
+           data-tag="linux,shell"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell基础">linux基础----shell基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%BE%AA%E7%8E%AF/"
+           data-tag="linux,for,while,select"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell循环">linux基础----shell循环</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%87%BD%E6%95%B0/"
+           data-tag="linux,function,trap"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell函数">linux基础----shell函数</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%88%86%E6%94%AF/"
+           data-tag="linux,if,case"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell分支">linux基础----shell分支</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----selinux/"
+           data-tag="linux,yum"
+           data-author="" >
+            <span class="post-title" title="linux基础----selinux">linux基础----selinux</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux shell "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell-expect/"
+           data-tag="linux,expect"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell-expect">linux基础----shell-expect</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----sed%E4%B8%89%E5%89%91%E5%AE%A2%E4%B9%8B%E4%B8%80/"
+           data-tag="linux,sed"
+           data-author="" >
+            <span class="post-title" title="linux基础----sed 三剑客之一">linux基础----sed 三剑客之一</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----RAID/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----RAID">linux基础----RAID</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----screen/"
+           data-tag="linux,screen"
+           data-author="" >
+            <span class="post-title" title="linux基础----screen">linux基础----screen</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----PAM%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6/"
+           data-tag="linux,pam"
+           data-author="" >
+            <span class="post-title" title="linux基础----PAM认证机制">linux基础----PAM认证机制</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----openssh/"
+           data-tag="linux,rsync,openssh,scp,sftp,dropbear"
+           data-author="" >
+            <span class="post-title" title="linux基础----openssh">linux基础----openssh</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----motd/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----开机登录提示">linux基础----开机登录提示</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----ntp/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----NTP">linux基础----NTP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----IP%E5%9C%B0%E5%9D%80/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----IP地址">linux基础----IP地址</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----help/"
+           data-tag="linux,help,whatis,man"
+           data-author="" >
+            <span class="post-title" title="linux基础----获取帮助">linux基础----获取帮助</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----grub%E4%BF%AE%E5%A4%8D%E4%B9%8Bcentos7/"
+           data-tag="linux,grub2"
+           data-author="" >
+            <span class="post-title" title="linux基础----grub修复之centos7">linux基础----grub修复之centos7</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----grep%E4%B8%89%E5%89%91%E5%AE%A2%E4%B9%8B%E4%B8%80/"
+           data-tag="linux,grep"
+           data-author="" >
+            <span class="post-title" title="linux基础----grep">linux基础----grep</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----grub%E4%BF%AE%E5%A4%8D%E4%B9%8Bcentos6/"
+           data-tag="linux,grub"
+           data-author="" >
+            <span class="post-title" title="linux基础----grub修复之centos6">linux基础----grub修复之centos6</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----for/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----for循环">linux基础----for循环</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----chrony/"
+           data-tag="linux,chrony"
+           data-author="" >
+            <span class="post-title" title="linux基础----时间同步和chrony">linux基础----时间同步和chrony</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----bridge/"
+           data-tag="linux,bridge"
+           data-author="" >
+            <span class="post-title" title="linux基础----桥接bridge">linux基础----桥接bridge</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----CA%E5%92%8C%E8%AF%81%E4%B9%A6/"
+           data-tag="linux,openssl"
+           data-author="" >
+            <span class="post-title" title="linux基础----CA和证书">linux基础----CA和证书</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----bash%E5%BF%AB%E6%8D%B7%E5%81%A5/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----bash快捷键">linux基础----bash快捷键</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----bond%20team/"
+           data-tag="linux,bond,team"
+           data-author="" >
+            <span class="post-title" title="linux基础----网卡绑定bond和链路聚合team">linux基础----网卡绑定bond和链路聚合team</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----awk%E4%B8%89%E5%89%91%E5%AE%A2%E4%B9%8B%E4%B8%80/"
+           data-tag="linux,awk"
+           data-author="" >
+            <span class="post-title" title="linux基础----awk">linux基础----awk</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux kubernetes "
+           href="/2021/07/07/kubernetes----%E8%B5%84%E6%BA%90%E6%8E%A7%E5%88%B6%E5%99%A85/"
+           data-tag="linux,kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----资源控制器5">kubernetes----资源控制器5</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux kubernetes "
+           href="/2021/07/07/kubernetes----%E8%B5%84%E6%BA%90%E6%B8%85%E5%8D%954/"
+           data-tag="linux,kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----资源清单4">kubernetes----资源清单4</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux kubernetes "
+           href="/2021/07/07/kubernetes----%E5%9F%BA%E7%A1%801/"
+           data-tag="linux,kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----基础1">kubernetes----基础1</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux kubernetes "
+           href="/2021/07/07/kubernetes----%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%852/"
+           data-tag="linux,kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----自动化安装2">kubernetes----自动化安装2</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux keepalived "
+           href="/2021/07/07/keepalived----3%E7%BB%84%E5%90%88/"
+           data-tag="linux,keepalived"
+           data-author="" >
+            <span class="post-title" title="keepalived----3组合">keepalived----3组合</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux kubernetes "
+           href="/2021/07/07/kubernetes----%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%853/"
+           data-tag="linux,kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----二进制安装3">kubernetes----二进制安装3</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux keepalived "
+           href="/2021/07/07/keepalived----1%E7%AE%80%E4%BB%8B/"
+           data-tag="linux,keepalived"
+           data-author="" >
+            <span class="post-title" title="keepalived----1简介">keepalived----1简介</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux keepalived "
+           href="/2021/07/07/keepalived----2%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,keepalived"
+           data-author="" >
+            <span class="post-title" title="keepalived----2安装及配置">keepalived----2安装及配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/httpd----3%E5%8D%8F%E8%AE%AE/"
+           data-tag="linux,http"
+           data-author="" >
+            <span class="post-title" title="httpd----3协议">httpd----3协议</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/httpd----2%E9%85%8D%E7%BD%AE%E5%8F%8A%E9%83%A8%E7%BD%B2/"
+           data-tag="linux,httpd"
+           data-author="" >
+            <span class="post-title" title="httpd----2配置及部署">httpd----2配置及部署</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----4ACL/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----4ACL">haproxy----4ACL</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/httpd----1%E5%9F%BA%E7%A1%80/"
+           data-tag="linux,httpd"
+           data-author="" >
+            <span class="post-title" title="httpd----1基础">httpd----1基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----3%E4%BF%AE%E6%94%B9%E6%8A%A5%E6%96%87%E9%A6%96%E9%83%A8%E3%80%81%E6%97%A5%E5%BF%97%E3%80%81%E5%8E%8B%E7%BC%A9%E3%80%81%E7%8A%B6%E6%80%81%E7%9B%91%E6%B5%8B/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----3修改报文首部、日志、压缩、状态监测">haproxy----3修改报文首部、日志、压缩、状态监测</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----1%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----1安装及配置">haproxy----1安装及配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----2%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8A%B6%E6%80%81%E9%A1%B5/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----2调度算法及状态页">haproxy----2调度算法及状态页</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux docker "
+           href="/2021/07/07/docker----5%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93harbor/"
+           data-tag="linux,docker"
+           data-author="" >
+            <span class="post-title" title="docker----5镜像仓库harbor">docker----5镜像仓库harbor</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux docker "
+           href="/2021/07/07/docker----6docker%20compose/"
+           data-tag="linux,docker"
+           data-author="" >
+            <span class="post-title" title="docker----6docker compose">docker----6docker compose</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux docker "
+           href="/2021/07/07/docker----3%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86/"
+           data-tag="linux,docker"
+           data-author="" >
+            <span class="post-title" title="docker----3数据管理">docker----3数据管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux docker "
+           href="/2021/07/07/docker----4%E7%BD%91%E7%BB%9C%E9%83%A8%E5%88%86/"
+           data-tag="linux,docker"
+           data-author="" >
+            <span class="post-title" title="docker----4网络部分">docker----4网络部分</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux docker "
+           href="/2021/07/07/docker----2%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="linux,docker"
+           data-author="" >
+            <span class="post-title" title="docker----2镜像制作">docker----2镜像制作</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux docker "
+           href="/2021/07/07/docker----1%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"
+           data-tag="linux,docker"
+           data-author="" >
+            <span class="post-title" title="docker----1基础命令">docker----1基础命令</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----4playbook/"
+           data-tag="linux,ansible,playbook"
+           data-author="" >
+            <span class="post-title" title="ansible-4playbook">ansible-4playbook</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,ansible"
+           data-author="" >
+            <span class="post-title" title="ansible-2安装与配置">ansible-2安装与配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----3%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
+           data-tag="linux,ansible"
+           data-author="" >
+            <span class="post-title" title="ansible-3模块使用说明">ansible-3模块使用说明</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----1%E7%AE%80%E4%BB%8B/"
+           data-tag="linux,ansible"
+           data-author="" >
+            <span class="post-title" title="ansible-1简介">ansible-1简介</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Windows "
+           href="/2020/02/23/windows-soft/"
+           data-tag="windows,soft"
+           data-author="" >
+            <span class="post-title" title="windows----windows 常用软件">windows----windows 常用软件</span>
+            <span class="post-date" title="2020-02-23 18:33:00">2020/02/23</span>
+        </a>
+        
+        <a  class="全部文章 工具 "
+           href="/2019/10/23/blog----%E7%AC%94%E8%AE%B0%E5%A4%87%E4%BB%BD/"
+           data-tag="tools"
+           data-author="" >
+            <span class="post-title" title="blogs----笔记备份">blogs----笔记备份</span>
+            <span class="post-date" title="2019-10-23 17:10:00">2019/10/23</span>
+        </a>
+        
+        <a  class="全部文章 Windows "
+           href="/2019/10/23/windows-win10%E4%BC%98%E5%8C%96/"
+           data-tag="windows"
+           data-author="" >
+            <span class="post-title" title="windows----win10优化">windows----win10优化</span>
+            <span class="post-date" title="2019-10-23 15:08:00">2019/10/23</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-10%E5%AE%9E%E7%8E%B0VPC%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-10实现VPC自定义网络">openstack-10实现VPC自定义网络</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-11%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-11镜像制作">openstack-11镜像制作</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-12%E8%A1%A5%E5%85%85/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-12补充">openstack-12补充</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-1%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-1基础环境准备">openstack-1基础环境准备</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-2%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-2环境准备">openstack-2环境准备</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-3keystone(%E8%AE%A4%E8%AF%81%E6%9C%8D%E5%8A%A1)/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-3keystone(认证服务)">openstack-3keystone(认证服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-7dashboard(%E4%BB%AA%E8%A1%A8%E7%9B%98)/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-7dashboard(仪表盘)">openstack-7dashboard(仪表盘)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-8%E5%AE%9E%E7%8E%B0%E5%86%85%E5%A4%96%E7%BD%91%E7%BB%93%E6%9E%84/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-8实现内外网结构">openstack-8实现内外网结构</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-9%E5%9D%97%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1%EF%BC%88%E6%AD%A4%E6%9C%8D%E5%8A%A1%E5%8F%AF%E9%80%89%EF%BC%89/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-9块存储服务（此服务可选）">openstack-9块存储服务（此服务可选）</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-4glance(%E9%95%9C%E5%83%8F%E6%9C%8D%E5%8A%A1)/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-4glance(镜像服务)">openstack-4glance(镜像服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-5computer(%E8%AE%A1%E7%AE%97%E6%9C%8D%E5%8A%A1)/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-5computer(计算服务)">openstack-5computer(计算服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Linux openstack "
+           href="/2019/09/27/openstack-6neutron(%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1)/"
+           data-tag="linux,openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-6neutron(网络服务)">openstack-6neutron(网络服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 test "
+           href="/2019/09/26/test-test233/"
+           data-tag="test"
+           data-author="" >
+            <span class="post-title" title="test----test">test----test</span>
+            <span class="post-date" title="2019-09-26 11:39:00">2019/09/26</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2019/09/02/k8s%E7%8E%AF%E5%A2%83/"
+           data-tag="ks8"
+           data-author="" >
+            <span class="post-title" title="k8s环境">k8s环境</span>
+            <span class="post-date" title="2019-09-02 14:58:00">2019/09/02</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-docker----1基础命令" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">docker----1基础命令</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Linux">Linux</a> > 
+            
+            <a  data-rel="Linux&lt;---&gt;docker">docker</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">linux</a>
+            
+            <a class="color2">docker</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-02-28 18:52:22'>2021-07-07 15:12</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:6.5k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#docker"><span class="toc-text">docker</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-%E7%AE%80%E4%BB%8B"><span class="toc-text">docker 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">docker 的组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E7%9A%84%E4%BC%98%E5%8A%BF"><span class="toc-text">Docker 的优势</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-text">Docker 的缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-%E5%AE%B9%E5%99%A8-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF"><span class="toc-text">docker(容器)的核心技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E8%A7%84%E8%8C%83"><span class="toc-text">容器规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8-runtime"><span class="toc-text">容器 runtime</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7"><span class="toc-text">容器管理工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E5%AE%9A%E4%B9%89%E5%B7%A5%E5%85%B7"><span class="toc-text">容器定义工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Registry"><span class="toc-text">Registry</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E6%8E%92%E5%B7%A5%E5%85%B7"><span class="toc-text">编排工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker-%E5%AE%B9%E5%99%A8-%E7%9A%84%E4%BE%9D%E8%B5%96%E6%8A%80%E6%9C%AF"><span class="toc-text">docker(容器)的依赖技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E7%BD%91%E7%BB%9C"><span class="toc-text">容器网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0"><span class="toc-text">服务发现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E7%9B%91%E6%8E%A7"><span class="toc-text">容器监控</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86"><span class="toc-text">数据管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86"><span class="toc-text">日志收集</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E5%AE%89%E8%A3%85%E5%8F%8A%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4%E4%BB%8B%E7%BB%8D"><span class="toc-text">Docker 安装及基础命令介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E4%BF%AE%E6%94%B9-yum-%E6%BA%90%E5%AE%89%E8%A3%85"><span class="toc-text">通过修改 yum 源安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E5%B9%B6%E9%AA%8C%E8%AF%81-docker-%E6%9C%8D%E5%8A%A1"><span class="toc-text">启动并验证 docker 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81-docker-%E7%89%88%E6%9C%AC"><span class="toc-text">验证 docker 版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81-docker0-%E7%BD%91%E5%8D%A1"><span class="toc-text">验证 docker0 网卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81-docker-%E4%BF%A1%E6%81%AF"><span class="toc-text">验证 docker 信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E"><span class="toc-text">docker 存储引擎</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E9%85%8D%E7%BD%AE"><span class="toc-text">docker镜像加速配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Docker-%E9%95%9C%E5%83%8F%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-text">Docker 镜像基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E9%95%9C%E5%83%8F"><span class="toc-text">搜索镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E9%95%9C%E5%83%8F"><span class="toc-text">下载镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E9%95%9C%E5%83%8F"><span class="toc-text">查看本地镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%E5%AF%BC%E5%87%BA"><span class="toc-text">镜像导出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%95%9C%E5%83%8F%E5%86%85%E5%AE%B9"><span class="toc-text">查看镜像内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5"><span class="toc-text">镜像导入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E9%95%9C%E5%83%8F"><span class="toc-text">删除镜像</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-text">容器操作基础命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E9%95%9C%E5%83%8F%E5%90%AF%E5%8A%A8%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8"><span class="toc-text">从镜像启动一个容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">显示正在运行的容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%89%80%E6%9C%89%E5%AE%B9%E5%99%A8"><span class="toc-text">显示所有容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E8%BF%90%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">删除运行中的容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="toc-text">端口映射</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9A%8F%E6%9C%BA%E6%98%A0%E5%B0%84%E7%AB%AF%E5%8F%A3"><span class="toc-text">随机映射端口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="toc-text">指定端口映射</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E8%AE%BF%E9%97%AE%E6%97%A5%E5%BF%97"><span class="toc-text">查看容器访问日志</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84"><span class="toc-text">查看容器端口映射</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AE%B9%E5%99%A8%E5%90%8D%E7%A7%B0"><span class="toc-text">自定义容器名称</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-text">后台启动容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%B9%B6%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8"><span class="toc-text">创建并进入容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E6%AC%A1%E8%BF%90%E8%A1%8C"><span class="toc-text">单次运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E9%80%92%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4"><span class="toc-text">传递运行命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E7%9A%84%E5%90%AF%E5%8A%A8%E5%92%8C%E5%85%B3%E9%97%AD"><span class="toc-text">容器的启动和关闭</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E5%88%B0%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">进入到正在运行的容器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-attach-%E5%91%BD%E4%BB%A4-%E6%AD%A4%E5%91%BD%E4%BB%A4%E7%94%A8%E4%B8%8D%E5%A4%9A%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F%E4%B8%BA-docker-attach-%E5%AE%B9%E5%99%A8%E5%90%8D%EF%BC%8Cattach-%E7%B1%BB%E4%BC%BC%E4%BA%8E-vnc%EF%BC%8C%E6%93%8D%E4%BD%9C%E4%BC%9A%E5%9C%A8%E5%90%84%E4%B8%AA%E5%AE%B9%E5%99%A8%E7%95%8C%E9%9D%A2%E6%98%BE%E7%A4%BA%EF%BC%8C%E6%89%80%E6%9C%89%E4%BD%BF%E7%94%A8%E6%AD%A4%E6%96%B9%E5%BC%8F%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8%E7%9A%84%E6%93%8D%E4%BD%9C%E9%83%BD%E6%98%AF%E5%90%8C%E6%AD%A5%E6%98%BE%E7%A4%BA%E7%9A%84%E4%B8%94-exit-%E5%90%8E%E5%AE%B9%E5%99%A8%E5%B0%86%E8%A2%AB%E5%85%B3%E9%97%AD%EF%BC%8C%E4%B8%94%E4%BD%BF%E7%94%A8-exit-%E9%80%80%E5%87%BA%E5%90%8E%E5%AE%B9%E5%99%A8%E5%85%B3%E9%97%AD%EF%BC%8C%E4%B8%8D%E6%8E%A8%E8%8D%90%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%AD%A4%E6%A8%A1%E5%BC%8F%E6%98%AF%E5%85%B1%E4%BA%AB%E7%BB%88%E7%AB%AF%E6%A8%A1%E5%BC%8F%E5%92%8Cscreen%E7%B1%BB%E4%BC%BC"><span class="toc-text">使用 attach 命令    此命令用不多，使用方式为 docker attach 容器名，attach 类似于 vnc，操作会在各个容器界面显示，所有使用此方式进入容器的操作都是同步显示的且 exit 后容器将被关闭，且使用 exit 退出后容器关闭，不推荐使用，此模式是共享终端模式和screen类似</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-exec-%E5%91%BD%E4%BB%A4"><span class="toc-text">使用 exec 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-nsenter-%E5%91%BD%E4%BB%A4"><span class="toc-text">使用 nsenter 命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%96%B9%E5%BC%8F"><span class="toc-text">脚本方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E5%86%85%E9%83%A8%E7%9A%84-hosts-%E6%96%87%E4%BB%B6"><span class="toc-text">查看容器内部的 hosts 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E5%88%A0%E9%99%A4%E5%AE%B9%E5%99%A8"><span class="toc-text">关闭删除容器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E5%85%B3%E9%97%AD%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">批量关闭正在运行的容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E5%BC%BA%E5%88%B6%E5%85%B3%E9%97%AD%E6%AD%A3%E5%9C%A8%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">批量强制关闭正在运行的容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E5%B7%B2%E9%80%80%E5%87%BA%E5%AE%B9%E5%99%A8"><span class="toc-text">批量删除已退出容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E5%88%A0%E9%99%A4%E6%89%80%E6%9C%89%E5%AE%B9%E5%99%A8"><span class="toc-text">批量删除所有容器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E5%AE%B9%E5%99%A8-DNS"><span class="toc-text">指定容器 DNS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h1><h2 id="docker-简介"><a href="#docker-简介" class="headerlink" title="docker 简介"></a>docker 简介</h2><p>首先 Docker 是一个在 2013 年开源的应用程序并且是一个基于 go 语言编写是一个开源的 pass 服务(Platform as a Service，平台即服务的缩写)，go 语言是由google 开发，docker 公司最早叫 dotCloud 后由于 Docker 开源后大受欢迎就将公司改名为 Docker Inc，总部位于美国加州的旧金山，Docker 是基于 linux 内核实现，Docker 最早采用 LXC 技术(LinuX Container 的简写，LXC 是 Linux 原生支持的容器技术，可以提供轻量级的虚拟化，可以说 docker 就是基于 LXC 发展起来的，提供 LXC 的高级封装，发展标准的配置方法)，而虚拟化技术 KVM(Kernel-based Virtual Machine) 基于模块实现，Docker 后改为自己研发并开源的 runc 技术运行容器</p>
+<p>Docker 相比虚拟机的交付速度更快，资源消耗更低，Docker 采用客户端/服务端架构，使用远程 API 来管理和创建 Docker 容器，其可以轻松的创建一个轻量级的、可移植的、自给自足的容器，docker 的三大理念是 build(构建)、ship(运输)、 run(运行)，Docker 遵从 aoache 2.0 协议，并通过（namespace 及cgroup 等）来提供容器的资源隔离与安全保障等，所以 Docke 容器在运行时不需要类似虚拟机（空运行的虚拟机占用物理机 6-8%性能）的额外资源开销，因此可以大幅提高资源利用率,总而言之 Docker 是一种用了新颖方式实现的轻量级虚拟机.类似于 VM 但是在原理和应用上和 VM 的差别还是很大的，并且 docker的专业叫法是应用容器(Application Container)</p>
+<table>
+<thead>
+<tr>
+<th>管理区域</th>
+<th>IDC(全都是自己管理)</th>
+<th>IAAS(infrastructure as a service 操作系统之上的服务)</th>
+<th>PAAS(platform as a services web应用)</th>
+<th>SAAS(software as a service 办公应用等，大部分通过web接入使用)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用户数据</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>应用程序</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>运行环境</td>
+<td>是</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>中间件</td>
+<td>是</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>操作系统</td>
+<td>是</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>hypervisor</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>服务器</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>存储层</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>网络层</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+</tr>
+</tbody></table>
+<h2 id="docker-的组成"><a href="#docker-的组成" class="headerlink" title="docker 的组成"></a>docker 的组成</h2><p>Docker 客户端(Client)：客户端使用 docker 命令或其他工具调用 docker API<br>Docker 服务端(Server)：Docker 守护进程，运行 docker 容器<br>Docker 镜像(Images)：镜像可以理解为创建实例使用的模板<br>Docker 容器(Container): 容器是从镜像生成对外提供服务的一个或一组服务<br>Docker 仓库(Registry): 保存镜像的仓库，类似于 git 或 svn 这样的版本控制系统，官方仓库: <a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a><br>Docker 主机(Host)：一个物理机或虚拟机，用于运行 Docker 服务进程和容器</p>
+<p>Docker 对比虚拟机<br>资源利用率更高：一台物理机可以运行数百个容器，但是一般只能运行数十个虚拟机<br>开销更小：不需要启动单独的虚拟机占用硬件资源<br>启动速度更快：可以在数秒内完成启动</p>
+<p><img src="/images/1613625052839.png"></p>
+<p>使用虚拟机是为了更好的实现服务运行环境隔离，但是一个虚拟机只运行一个服务，很明显资源利用率比较低</p>
+<h2 id="Docker-的优势"><a href="#Docker-的优势" class="headerlink" title="Docker 的优势"></a>Docker 的优势</h2><p>快速部署：短时间内可以部署成百上千个应用，更快速交付到线上。<br>高效虚拟化：不需要额外的 hypervisor 支持，直接基于 linux 实现应用虚拟化，相比虚拟机大幅提高性能和效率。<br>节省开支：提高服务器利用率，降低 IT 支出。<br>简化配置：将运行环境打包保存至容器，使用时直接启动即可。<br>快速迁移和扩展：可夸平台运行在物理机、虚拟机、公有云等环境，良好的兼容性可以方便将应用从 A 宿主机迁移到 B 宿主机，甚至是 A 平台迁移到 B 平台</p>
+<h2 id="Docker-的缺点"><a href="#Docker-的缺点" class="headerlink" title="Docker 的缺点"></a>Docker 的缺点</h2><p>隔离性：各应用之间的隔离不如虚拟机</p>
+<h2 id="docker-容器-的核心技术"><a href="#docker-容器-的核心技术" class="headerlink" title="docker(容器)的核心技术"></a>docker(容器)的核心技术</h2><h3 id="容器规范"><a href="#容器规范" class="headerlink" title="容器规范"></a>容器规范</h3><p>除了 docker 之外的 docker 技术，还有 coreOS 的 rkt，还有阿里的 Pouch，为了保证容器生态的标志性和健康可持续发展，包括 Google、Docker 等公司共同成立了一个叫 open container（OCI）的组织，其目的就是制定开放的标准的容器规范，目前 OCI 一共发布了两个规范，分别是 runtime spec 和 image format spec，有了这两个规范，不通的容器公司开发的容器只要兼容这两个规范，就可以保证容器的可移植性和相互可操作性</p>
+<h3 id="容器-runtime"><a href="#容器-runtime" class="headerlink" title="容器 runtime"></a>容器 runtime</h3><p>runtime 是真正运行容器的地方，因此为了运行不同的容器 runtime 需要和操作系统内核紧密合作相互在支持，以便为容器提供相应的运行环境。<br>目前主流的三种 runtime：<br>Lxc：linux 上早期的 runtime，Docker 早期就是采用 lxc 作为 runtime。<br>runc：目前 Docker 默认的 runtime，runc 遵守 OCI 规范，因此可以兼容 lxc。<br>rkt：是 CoreOS 开发的容器 runtime，也符合 OCI 规范，所以使用 rktruntime 也可以运行 Docker 容器</p>
+<h3 id="容器管理工具"><a href="#容器管理工具" class="headerlink" title="容器管理工具"></a>容器管理工具</h3><p>管理工具连接 runtime 与用户，对用户提供图形或命令方式操作，然后管理工具将用户操作传递给 runtime 执行。<br>Lxd 是 lxc 的管理工具。<br>Runc 的管理工具是 docker engine，docker engine 包含后台 deamon 和 cli 两部分，大家经常提到的 Docker 就是指的 docker engine。<br>Rkt 的管理工具是 rkt cli</p>
+<h3 id="容器定义工具"><a href="#容器定义工具" class="headerlink" title="容器定义工具"></a>容器定义工具</h3><p>容器定义工具允许用户定义容器的属性和内容，以方便容器能够被保存、共享和重建<br>Docker image：是 docker 容器的模板，runtime 依据 docker image 创建容器。<br>Dockerfile：包含 N 个命令的文本文件，通过 dockerfile 创建出 docker image。<br>ACI(App container image)：与 docker image 类似，是 CoreOS 开发的 rkt 容器的镜像格式</p>
+<h3 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h3><p>统一保存共享镜像的地方，叫做镜像仓库。<br>Image registry：docker 官方提供的私有仓库部署工具。<br>Docker hub：docker 官方的公共仓库，已经保存了大量的常用镜像，可以方便大家直接使用。<br>Harbor：vmware 提供的自带 web 的镜像仓库，目前有很多公司使用</p>
+<h3 id="编排工具"><a href="#编排工具" class="headerlink" title="编排工具"></a>编排工具</h3><p>当多个容器在多个主机运行的时候，单独管理每个容器是相当负载而且很容易出错，而且也无法实现某一台主机宕机后容器自动迁移到其他主机从而实现高可用的目的，也无法实现动态伸缩的功能，因此需要有一种工具可以实现统一管理、<br>动态伸缩、故障自愈、批量执行等功能，这就是容器编排引擎。<br>容器编排通常包括容器管理、调度、集群定义和服务发现等功能。<br>Docker swarm：docker 开发的容器编排引擎。<br>Kubernetes：google 领导开发的容器编排引擎，内部项目为 Borg，且其同时支持docker 和 CoreOS。<br>Mesos+Marathon：通用的集群组员调度平台，mesos 与 marathon 一起提供容器编排引擎功能</p>
+<h2 id="docker-容器-的依赖技术"><a href="#docker-容器-的依赖技术" class="headerlink" title="docker(容器)的依赖技术"></a>docker(容器)的依赖技术</h2><h3 id="容器网络"><a href="#容器网络" class="headerlink" title="容器网络"></a>容器网络</h3><p>docker 自带的网络 docker network 仅支持管理单机上的容器网络，当多主机运行的时候需要使用第三方开源网络，例如 calico、flannel 等</p>
+<h3 id="服务发现"><a href="#服务发现" class="headerlink" title="服务发现"></a>服务发现</h3><p>容器的动态扩容特性决定了容器 IP 也会随之变化，因此需要有一种机制开源自动识别并将用户请求动态转发到新创建的容器上，kubernetes 自带服务发现功能，需要结合 kube-dns 服务解析内部域名</p>
+<h3 id="容器监控"><a href="#容器监控" class="headerlink" title="容器监控"></a>容器监控</h3><p>可以通过原生命令 docker ps/top/stats 查看容器运行状态，另外也可以使heapster/ Prometheus 等第三方监控工具监控容器的运行状态</p>
+<h3 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h3><p>容器的动态迁移会导致其在不通的 Host 之间迁移，因此如何保证与容器相关的数据也能随之迁移或随时访问，可以使用逻辑卷/存储挂载等方式解决</p>
+<h3 id="日志收集"><a href="#日志收集" class="headerlink" title="日志收集"></a>日志收集</h3><p>docker 原生的日志查看工具 docker logs，但是容器内部的日志需要通过 ELK 等专门的日志收集分析和展示工具进行处理</p>
+<h2 id="Docker-安装及基础命令介绍"><a href="#Docker-安装及基础命令介绍" class="headerlink" title="Docker 安装及基础命令介绍"></a>Docker 安装及基础命令介绍</h2><p>官方网址：<a target="_blank" rel="noopener" href="https://www.docker.com/">https://www.docker.com/</a><br>系统版本选择：<br>Docker 目前已经支持多种操作系统的安装运行，比如 Ubuntu、CentOS、Redhat、Debian、Fedora，甚至是还支持了 Mac 和 Windows，在 linux 系统上需要内核版本在 3.10 或以上，docker 版本号之前一直是 0.X 版本或 1.X 版本，但是从 2017 年 3 月 1 号开始改为每个季度发布一次稳版，其版本号规则也统一变更为 YY.MM，例如 17.09 表示是 2017 年 9 月份发布的，本次演示的操作系统使用 Centos 7.5 为例</p>
+<p>Docker 版本选择<br>ocker 之前没有区分版本，但是 2017 年推出(将 docker 更名为)新的项目Moby，github 地址：<a target="_blank" rel="noopener" href="https://github.com/moby/moby%EF%BC%8CMoby">https://github.com/moby/moby，Moby</a> 项目属于 Docker 项目的全新上游，Docker 将是一个隶属于的 Moby 的子产品，而且之后的版本之后开始区分为 CE 版本（社区版本）和 EE（企业收费版），CE 社区版本和 EE 企业版本都是每个季度发布一个新版本，但是 EE 版本提供后期安全维护 1 年，而CE 版本是 4 个月，本次演示的 Docker 版本为 18.03，以下为官方原文</p>
+<p><a target="_blank" rel="noopener" href="https://www.docker.com/blog/docker-enterprise-edition/">https://www.docker.com/blog/docker-enterprise-edition/</a></p>
+<p>Docker CE and EE are released quarterly, and CE also has a monthly “Edge” option.Each Docker EE release is supported and maintained for one year and receivessecurity and critical bugfixes during that period. We are also improving Docker CEmaintainability by maintaining each quarterly CE release for 4 months. That getsDocker CE users a new 1-month window to update from one version to the next<br>Docker CE和EE每季度发布一次，CE还具有每月“ Edge”选项。每个Docker EE版本均受支持和维护一年，并在此期间获得安全性和重要的错误修正。我们还将每个季度的CE版本维持4个月，从而提高Docker CE的可维护性。这为Docker CE用户提供了一个新的1个月窗口，可以从一个版本更新到另一个版本</p>
+<p>官方 rpm 包下载地址    <a target="_blank" rel="noopener" href="https://download.docker.com/linux/centos/7/x86_64/stable/Packages/">https://download.docker.com/linux/centos/7/x86_64/stable/Packages/</a><br>阿里镜像下载地址    <a target="_blank" rel="noopener" href="https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/stable/Packages">https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/stable/Packages</a></p>
+<h3 id="通过修改-yum-源安装"><a href="#通过修改-yum-源安装" class="headerlink" title="通过修改 yum 源安装"></a>通过修改 yum 源安装</h3><pre><code class="bash">yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+sed -i &#39;s+download.docker.com+mirrors.aliyun.com/docker-ce+&#39; /etc/yum.repos.d/docker-ce.repo
+yum makecache fast
+yum -y install docker-ce
+</code></pre>
+<p>通过rpm安装</p>
+<pre><code class="bash">[root@localhost docker]# rpm -ivh docker-ce-20.10.3-3.el7.x86_64.rpm 
+warning: docker-ce-20.10.3-3.el7.x86_64.rpm: Header V4 RSA/SHA512 Signature, key ID 621e9f35: NOKEY
+error: Failed dependencies:
+        container-selinux &gt;= 2:2.74 is needed by docker-ce-3:20.10.3-3.el7.x86_64
+        containerd.io &gt;= 1.4.1 is needed by docker-ce-3:20.10.3-3.el7.x86_64
+        docker-ce-cli is needed by docker-ce-3:20.10.3-3.el7.x86_64
+        docker-ce-rootless-extras is needed by docker-ce-3:20.10.3-3.el7.x86_64
+        
+rpm -ivh container-selinux-2.119.2-1.911c772.el7_8.noarch.rpm 
+rpm -ivh containerd.io-1.4.3-3.1.el7.x86_64.rpm 
+rpm -ivh docker-ce-cli-20.10.3-3.el7.x86_64.rpm 
+rpm -ivh slirp4netns-0.4.3-4.el7_8.x86_64.rpm 
+rpm -ivh fuse3-libs-3.6.1-4.el7.x86_64.rpm 
+rpm -ivh fuse-overlayfs-0.7.2-6.el7_8.x86_64.rpm 
+rpm -ivh docker-ce-rootless-extras-20.10.3-3.el7.x86_64.rpm --force --nodeps
+rpm -ivh docker-ce-20.10.3-3.el7.x86_64.rpm --force --nodeps
+</code></pre>
+<h3 id="启动并验证-docker-服务"><a href="#启动并验证-docker-服务" class="headerlink" title="启动并验证 docker 服务"></a>启动并验证 docker 服务</h3><pre><code class="bash">systemctl start docker
+sysemctl enable docker
+</code></pre>
+<h3 id="验证-docker-版本"><a href="#验证-docker-版本" class="headerlink" title="验证 docker 版本"></a>验证 docker 版本</h3><pre><code class="bash">[root@localhost docker]# docker version
+Client: Docker Engine - Community
+ Version:           20.10.3
+ API version:       1.41
+ Go version:        go1.13.15
+ Git commit:        48d30b5
+ Built:             Fri Jan 29 14:34:14 2021
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.3
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.15
+  Git commit:       46229ca
+  Built:            Fri Jan 29 14:32:37 2021
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.4.3
+  GitCommit:        269548fa27e0089a8b8278fc4fc781d7f65a939b
+ runc:
+  Version:          1.0.0-rc92
+  GitCommit:        ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+</code></pre>
+<h3 id="验证-docker0-网卡"><a href="#验证-docker0-网卡" class="headerlink" title="验证 docker0 网卡"></a>验证 docker0 网卡</h3><p>在 docker 安装启动之后，默认会生成一个名称为 docker0 的网卡并且默认 IP 地址为 172.17.0.1 的网卡</p>
+<pre><code class="bash">[root@docker ~]# ip a
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:a3:d7:fa brd ff:ff:ff:ff:ff:ff
+    inet 192.168.10.2/24 brd 192.168.10.255 scope global eth0
+       valid_lft forever preferred_lft forever
+3: eth1: &lt;BROADCAST,MULTICAST&gt; mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:0c:29:a3:d7:04 brd ff:ff:ff:ff:ff:ff
+4: docker0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:22:3b:21:e2 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+</code></pre>
+<h3 id="验证-docker-信息"><a href="#验证-docker-信息" class="headerlink" title="验证 docker 信息"></a>验证 docker 信息</h3><pre><code class="bash">[root@docker ~]# docker info
+Client:
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  app: Docker App (Docker Inc., v0.9.1-beta3)
+  buildx: Build with BuildKit (Docker Inc., v0.5.1-docker)
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 20.10.3
+ Storage Driver: overlay2
+  Backing Filesystem: xfs
+  Supports d_type: true
+  Native Overlay Diff: true
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 1
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: runc io.containerd.runc.v2 io.containerd.runtime.v1.linux
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 269548fa27e0089a8b8278fc4fc781d7f65a939b
+ runc version: ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 3.10.0-957.el7.x86_64
+ Operating System: CentOS Linux 7 (Core)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 2
+ Total Memory: 3.839GiB
+ Name: docker
+ ID: PQ75:MGOL:UY3S:42PU:XGJI:ZLJ3:DDCX:S3K4:L4XY:TJ3Q:JWJM:2XTN
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disabled
+</code></pre>
+<h3 id="docker-存储引擎"><a href="#docker-存储引擎" class="headerlink" title="docker 存储引擎"></a>docker 存储引擎</h3><p>目前 docker 的默认存储引擎为 overlay2，需要磁盘分区支持 d-type 文件分层功能，因此需要系统磁盘的额外支持</p>
+<p>官方文档关于存储引擎的选择文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/storage/storagedriver/select-storage-driver/">https://docs.docker.com/storage/storagedriver/select-storage-driver/</a></p>
+<p>Docker 官方推荐首选存储引擎为 overlay2 其次为 devicemapper，但是devicemapper 存在使用空间方面的一些限制，虽然可以通过后期配置解决，但是官方依然推荐使用 overlay2，以下是网上查到的部分资料：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/youruncloud/p/5736718.html">https://www.cnblogs.com/youruncloud/p/5736718.html</a></p>
+<pre><code class="bash">[root@docker ~]# xfs_info  /
+meta-data=/dev/mapper/centos-root isize=512    agcount=4, agsize=6343680 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0 spinodes=0
+data     =                       bsize=4096   blocks=25374720, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1        #早期centos版本ftype=0会影响docker存储引擎，旧版本只能共享100G
+log      =internal               bsize=4096   blocks=12390, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+</code></pre>
+<p>如果 docker 数据目录是一块单独的磁盘分区而且是 xfs 格式的，那么需要在格式化的时候加上参数-n ftype=1，否则后期在启动容器的时候会报错不支持 d-type</p>
+<pre><code class="bash">WARNING: overLay: the backing xfs filesystem is formatted **without d_type support,** which Leads to incorrect behavior Reformat the filesystem with ftype=1 to enable dtype support.
+Running without d type support will not be supported in future releases
+</code></pre>
+<h3 id="docker镜像加速配置"><a href="#docker镜像加速配置" class="headerlink" title="docker镜像加速配置"></a>docker镜像加速配置</h3><p>国内下载国外的镜像有时候会很慢，因此可以更改 docker 配置文件添加一个加速器，可以通过加速器达到加速下载镜像的目的</p>
+<p>获取加速地址<br>浏览器打开 <a target="_blank" rel="noopener" href="http://cr.console.aliyun.com/">http://cr.console.aliyun.com</a><br>注册或登录阿里云账号，点击左侧的镜像加速器，将会得到一个专属的加速地址，而且下面有使用配置说明<br>镜像服务中心 –&gt; 镜像中心 –&gt; 镜像加速器    <a target="_blank" rel="noopener" href="https://t487r8sk.mirror.aliyuncs.com/">https://t487r8sk.mirror.aliyuncs.com</a><br><img src="/images/1613643409649.png"></p>
+<pre><code class="bash">tee /etc/docker/daemon.json &lt;&lt;-&#39;EOF&#39;
+&#123;
+  &quot;registry-mirrors&quot;: [&quot;https://t487r8sk.mirror.aliyuncs.com&quot;]
+&#125;
+EOF
+
+systemctl daemon-reload
+systemctl restart docker
+</code></pre>
+<h3 id="Docker-镜像基础命令"><a href="#Docker-镜像基础命令" class="headerlink" title="Docker 镜像基础命令"></a>Docker 镜像基础命令</h3><p>docker 命令是最常使用的命令，其后面可以加不同的参数以实现响应的功能</p>
+<h4 id="搜索镜像"><a href="#搜索镜像" class="headerlink" title="搜索镜像"></a>搜索镜像</h4><p>在官方的 docker 仓库中搜索指定名称的 docker 镜像，也会有很多三方镜像</p>
+<pre><code class="bash">docker search centos:7.2.1511    #指定版本号
+docker search centos    不带版本号默认latest
+</code></pre>
+<h4 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h4><pre><code class="bash">docker pull nginx
+docker pull hello-world
+docker pull centos
+docker pull centos:7.6.1810
+</code></pre>
+<h4 id="查看本地镜像"><a href="#查看本地镜像" class="headerlink" title="查看本地镜像"></a>查看本地镜像</h4><p>下载完成的镜像比下载的大，因为下载完成后会解压</p>
+<pre><code class="bash">REPOSITORY #镜像所属的仓库名称
+TAG #镜像版本号（标识符），默认为 latest
+IMAGE ID #镜像唯一 ID 标示
+CREATED #镜像创建时间
+VIRTUAL SIZE #镜像的大小
+
+[root@docker ~]# docker images
+REPOSITORY    TAG        IMAGE ID       CREATED         SIZE
+nginx         latest     f6d0b4767a6c   5 weeks ago     133MB
+centos        latest     300e315adb2f   2 months ago    209MB
+hello-world   latest     bf756fb1ae65   13 months ago   13.3kB
+centos        7.6.1810   f1cb7c7d58b7   23 months ago   202MB
+</code></pre>
+<h4 id="镜像导出"><a href="#镜像导出" class="headerlink" title="镜像导出"></a>镜像导出</h4><p>可以将镜像从本地导出问为一个压缩文件，然后复制到其他服务器进行导入使用<br>以下两种方法都可以<br>docker save -o /tmp/centos.tar.gz centos<br>docker save centos &gt; /tmp/centos.tar.gz</p>
+<h4 id="查看镜像内容"><a href="#查看镜像内容" class="headerlink" title="查看镜像内容"></a>查看镜像内容</h4><pre><code class="bash">mkdir /tmp/centos
+tar xf /tmp/centos.tar.gz -C /tmp/centos
+[root@docker centos]# cat manifest.json     #此配置文件包含了镜像的相关配置，配置文件、分层
+[&#123;&quot;Config&quot;:&quot;f1cb7c7d58b73eac859c395882eec49d50651244e342cd6c68a5c7809785f427.json&quot;,&quot;RepoTags&quot;:[&quot;centos:7.6.1810&quot;],&quot;Layers&quot;:[&quot;b381a91ac032488a645b132ff8fe54935b42802ef1066668e5e15971aa509a0c/layer.tar&quot;]&#125;,&#123;&quot;Config&quot;:&quot;300e315adb2f96afe5f0b2780b87f28ae95231fe3bdd1e16b9ba606307728f55.json&quot;,&quot;RepoTags&quot;:[&quot;centos:latest&quot;],&quot;Layers&quot;:[&quot;f1037aee492bd55e63970da6da22c5c974c84e5ce4cb967104f2666c6abf7f98/layer.tar&quot;]&#125;]
+
+#分层为了方便文件的共用，即相同的文件可以共用
+[&#123;&quot;Config&quot;:&quot; 配 置 文 件 .json&quot;,&quot;RepoTags&quot;:[&quot;docker.io/nginx:latest&quot;],&quot;Layers&quot;:[&quot; 分 层1/layer.tar&quot;,&quot;分层 2 /layer.tar&quot;,&quot;分层 3 /layer.tar&quot;]&#125;]
+</code></pre>
+<h4 id="镜像导入"><a href="#镜像导入" class="headerlink" title="镜像导入"></a>镜像导入</h4><p>以下两种方法都支持</p>
+<pre><code class="bash">docker load &lt; /centos/centos.tar.gz
+docker load -i /tmp/centos.tar.gz
+</code></pre>
+<h4 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h4><pre><code class="bash">docker rmi centos
+</code></pre>
+<h2 id="容器操作基础命令"><a href="#容器操作基础命令" class="headerlink" title="容器操作基础命令"></a>容器操作基础命令</h2><pre><code class="bash">docker run [选项] [镜像名] [shell 命令] [参数]
+docker run [参数选项] [镜像名称，必须在所有选项的后面] [/bin/echo &#39;hellowold&#39;] #单次执行，没有自定义容器名称
+docker run centos /bin/echo &#39;hello wold&#39; #启动的容器在执行完 shel 命令就退出了
+</code></pre>
+<h3 id="从镜像启动一个容器"><a href="#从镜像启动一个容器" class="headerlink" title="从镜像启动一个容器"></a>从镜像启动一个容器</h3><p>会直接进入到容器，并随机生成容器 ID 和名称</p>
+<pre><code class="bash">[root@docker centos]# docker run -it centos bash
+[root@dfca5b6037df /]# 
+</code></pre>
+<p><strong>退出容器不注销</strong>    ctrl+p+q        </p>
+<h3 id="显示正在运行的容器"><a href="#显示正在运行的容器" class="headerlink" title="显示正在运行的容器"></a>显示正在运行的容器</h3><pre><code class="bash">[root@docker centos]# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
+dfca5b6037df   centos    &quot;bash&quot;    2 minutes ago   Up 2 minutes             dazzling_bose
+</code></pre>
+<h3 id="显示所有容器"><a href="#显示所有容器" class="headerlink" title="显示所有容器"></a>显示所有容器</h3><p>包括当前正在运行以及已经关闭的所有容器</p>
+<pre><code class="bash">[root@docker centos]# docker ps -a
+CONTAINER ID   IMAGE     COMMAND               CREATED                  STATUS                              PORTS     NAMES
+4c9251b358b6   centos    &quot;echo &#39;hello word&#39;&quot;   Less than a second ago   Exited (0) Less than a second ago             pensive_leavitt
+dfca5b6037df   centos    &quot;bash&quot;                3 minutes ago            Up 3 minutes                                  dazzling_bose
+</code></pre>
+<h3 id="删除运行中的容器"><a href="#删除运行中的容器" class="headerlink" title="删除运行中的容器"></a>删除运行中的容器</h3><p>即使容正在运行当中，也会被强制删除掉</p>
+<pre><code class="bash">[root@docker centos]# docker ps     #删除前
+CONTAINER ID   IMAGE     COMMAND   CREATED         STATUS         PORTS     NAMES
+dfca5b6037df   centos    &quot;bash&quot;    3 minutes ago   Up 3 minutes             dazzling_bose
+[root@docker centos]# docker rm -f dfca5b6037df
+dfca5b6037df
+[root@docker centos]# docker ps     #删除后
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+</code></pre>
+<h3 id="端口映射"><a href="#端口映射" class="headerlink" title="端口映射"></a>端口映射</h3><h4 id="随机映射端口"><a href="#随机映射端口" class="headerlink" title="随机映射端口"></a>随机映射端口</h4><pre><code class="bash">前台启动并随机映射本地端口到容器的 80,前台启动的会话窗口无法进行其他操作，除非退出，但是退出后容器也会退出
+docker run -P nginx 
+#随机端口映射，其实是默认从 32768 开始
+</code></pre>
+<h4 id="指定端口映射"><a href="#指定端口映射" class="headerlink" title="指定端口映射"></a>指定端口映射</h4><p>本地端口 81 映射到容器 80 端口</p>
+<pre><code class="bash">docker run -p 81:80 --name nginx1 nginx
+</code></pre>
+<p>本地 IP:本地端口:容器端口</p>
+<pre><code class="bash">docker run -p 192.168.10.2:82:80 --name  nginx2 nginx
+</code></pre>
+<p>本地 IP:本地随机端口:容器端口</p>
+<pre><code class="bash">docker run -p 192.168.10.2::80 --name  nginx3 nginx
+</code></pre>
+<p>本机 ip:本地端口:容器端口/协议，默认为 tcp 协议</p>
+<pre><code class="bash">docker run -p 192.168.10.2:80:80/tcp --name  nginx4 nginx
+</code></pre>
+<p>一次性映射多个端口+协议</p>
+<pre><code class="bash">docker run -p 80:80/tcp -p 443:443/tcp -p 53:53/udp --name  nginx5 nginx
+</code></pre>
+<h3 id="查看容器访问日志"><a href="#查看容器访问日志" class="headerlink" title="查看容器访问日志"></a>查看容器访问日志</h3><pre><code class="bash">docker logs nginx4
+docker logs nginx4 -f #实时查看
+</code></pre>
+<h3 id="查看容器端口映射"><a href="#查看容器端口映射" class="headerlink" title="查看容器端口映射"></a>查看容器端口映射</h3><pre><code class="bash">[root@docker ~]# docker port nginx5
+443/tcp -&gt; 0.0.0.0:443
+53/udp -&gt; 0.0.0.0:53
+80/tcp -&gt; 0.0.0.0:80
+
+docker ps 也可以查看容器的端口映射
+</code></pre>
+<h3 id="自定义容器名称"><a href="#自定义容器名称" class="headerlink" title="自定义容器名称"></a>自定义容器名称</h3><pre><code class="bash">docker run -it --name nginx6 nginx
+</code></pre>
+<h3 id="后台启动容器"><a href="#后台启动容器" class="headerlink" title="后台启动容器"></a>后台启动容器</h3><pre><code class="bash">[root@docker ~]# docker run -d -P --name nginx7 nginx
+8ebb02534e53de4ecb0dffb01a5e6f46f33d79f2529c28fb6cfe3f4ba852df37
+</code></pre>
+<h3 id="创建并进入容器"><a href="#创建并进入容器" class="headerlink" title="创建并进入容器"></a>创建并进入容器</h3><pre><code class="bash">[root@docker ~]# docker run -d --name centos1 centos
+f85a346748b86913b32de0b43c000f7936691e3b321d48b284eda5d1e06255a0
+</code></pre>
+<h3 id="单次运行"><a href="#单次运行" class="headerlink" title="单次运行"></a>单次运行</h3><p>容器退出后自动删除</p>
+<pre><code class="bash">docker run -it --rm --name nginx1 nginx
+</code></pre>
+<h3 id="传递运行命令"><a href="#传递运行命令" class="headerlink" title="传递运行命令"></a>传递运行命令</h3><p>容器需要有一个前台运行的进程才能保持容器的运行，通过传递运行参数是一种方式，另外也可以在构建镜像的时候指定容器启动时运行的前台命令</p>
+<pre><code class="bash">docker run -d centos /usr/bin/tail -f /etc/hosts
+</code></pre>
+<h3 id="容器的启动和关闭"><a href="#容器的启动和关闭" class="headerlink" title="容器的启动和关闭"></a>容器的启动和关闭</h3><pre><code class="bash">docker stop 5c9fc1ee8fdd
+docker start 5c9fc1ee8fdd
+</code></pre>
+<h3 id="进入到正在运行的容器"><a href="#进入到正在运行的容器" class="headerlink" title="进入到正在运行的容器"></a>进入到正在运行的容器</h3><h4 id="使用-attach-命令-此命令用不多，使用方式为-docker-attach-容器名，attach-类似于-vnc，操作会在各个容器界面显示，所有使用此方式进入容器的操作都是同步显示的且-exit-后容器将被关闭，且使用-exit-退出后容器关闭，不推荐使用，此模式是共享终端模式和screen类似"><a href="#使用-attach-命令-此命令用不多，使用方式为-docker-attach-容器名，attach-类似于-vnc，操作会在各个容器界面显示，所有使用此方式进入容器的操作都是同步显示的且-exit-后容器将被关闭，且使用-exit-退出后容器关闭，不推荐使用，此模式是共享终端模式和screen类似" class="headerlink" title="使用 attach 命令    此命令用不多，使用方式为 docker attach 容器名，attach 类似于 vnc，操作会在各个容器界面显示，所有使用此方式进入容器的操作都是同步显示的且 exit 后容器将被关闭，且使用 exit 退出后容器关闭，不推荐使用，此模式是共享终端模式和screen类似"></a>使用 attach 命令    此命令用不多，使用方式为 docker attach 容器名，attach 类似于 vnc，操作会在各个容器界面显示，所有使用此方式进入容器的操作都是同步显示的且 exit 后容器将被关闭，且使用 exit 退出后容器关闭，<strong>不推荐使用</strong>，此模式是共享终端模式和screen类似</h4><pre><code class="bash">docker attach 5c9fc1ee8fdd
+</code></pre>
+<h4 id="使用-exec-命令"><a href="#使用-exec-命令" class="headerlink" title="使用 exec 命令"></a>使用 exec 命令</h4><p>执行单次命令与进入容器，<strong>不是很推荐此方式，虽然 exit 退出容器还在运行</strong></p>
+<pre><code class="bash">[root@docker ~]# docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+5c9fc1ee8fdd   centos    &quot;/usr/bin/tail -f /e…&quot;   7 minutes ago   Up 6 minutes             determined_almeida
+[root@docker ~]# docker exec -it 5c9fc1ee8fdd bash
+</code></pre>
+<h4 id="使用-nsenter-命令"><a href="#使用-nsenter-命令" class="headerlink" title="使用 nsenter 命令"></a>使用 nsenter 命令</h4><p><strong>推荐使用此方式</strong>，nsenter 命令需要通过 PID 进入到容器内部，不过可以使用</p>
+<pre><code class="bash">yum install util-linux #安装 nsenter 命令
+
+docker inspect -f &quot;.&quot; 容器ID/容器名称
+docker inspect  5c9fc1ee8fdd
+
+[root@docker ~]# docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS         PORTS     NAMES
+5c9fc1ee8fdd   centos    &quot;/usr/bin/tail -f /e…&quot;   10 minutes ago   Up 9 minutes             determined_almeida
+[root@docker ~]# docker inspect -f &quot;&#123;&#123;.NetworkSettings.IPAddress&#125;&#125;&quot; 5c9fc1ee8fdd    #获取容器的IP
+172.17.0.2
+
+获取到某个docker 容器的 PID，可以通过 PID 进入到容器内
+[root@docker ~]# docker inspect -f &quot;&#123;&#123;.State.Pid&#125;&#125;&quot; 5c9fc1ee8fdd
+15298
+
+使用PID时入容器
+[root@docker ~]# nsenter -t 15298 -m -u -i -n -p    
+[root@5c9fc1ee8fdd /]# 
+</code></pre>
+<h4 id="脚本方式"><a href="#脚本方式" class="headerlink" title="脚本方式"></a>脚本方式</h4><pre><code class="bash">#!/bin/bash
+_docker_in()&#123;
+    NAME_ID=$1
+    PID=$(docker inspect -f &quot;&#123;&#123;.State.Pid&#125;&#125;&quot; $&#123;NAME_ID&#125;)
+    nsenter -t $&#123;PID&#125; -m -u -i -n -p
+&#125;
+
+_docker_in $1
+</code></pre>
+<h3 id="查看容器内部的-hosts-文件"><a href="#查看容器内部的-hosts-文件" class="headerlink" title="查看容器内部的 hosts 文件"></a>查看容器内部的 hosts 文件</h3><pre><code class="bash">[root@5c9fc1ee8fdd /]# cat /etc/hosts
+127.0.0.1       localhost
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+172.17.0.2      5c9fc1ee8fdd      #默认会将实例的 ID 添加到自己的 hosts 文件
+
+ping 5c9fc1ee8fdd 
+</code></pre>
+<h3 id="关闭删除容器"><a href="#关闭删除容器" class="headerlink" title="关闭删除容器"></a>关闭删除容器</h3><h4 id="批量关闭正在运行的容器"><a href="#批量关闭正在运行的容器" class="headerlink" title="批量关闭正在运行的容器"></a>批量关闭正在运行的容器</h4><pre><code class="bash">docker stop $(docker ps -a -q)    正常关闭所有运行中的容器
+</code></pre>
+<h4 id="批量强制关闭正在运行的容器"><a href="#批量强制关闭正在运行的容器" class="headerlink" title="批量强制关闭正在运行的容器"></a>批量强制关闭正在运行的容器</h4><pre><code class="bash">docker kill $(docker ps -a -q)     强制关闭所有运行中的容器
+</code></pre>
+<h4 id="批量删除已退出容器"><a href="#批量删除已退出容器" class="headerlink" title="批量删除已退出容器"></a>批量删除已退出容器</h4><pre><code class="bash"> docker rm -f `docker ps -aq -f status=exited`
+</code></pre>
+<h4 id="批量删除所有容器"><a href="#批量删除所有容器" class="headerlink" title="批量删除所有容器"></a>批量删除所有容器</h4><pre><code class="bash">docker rm -f $(docker ps -a -q)
+</code></pre>
+<h3 id="指定容器-DNS"><a href="#指定容器-DNS" class="headerlink" title="指定容器 DNS"></a><strong>指定容器 DNS</strong></h3><p>dns 服务，默认采用宿主机的 dns 地址<br>一是将 dns 地址配置在宿主机<br>二是将参数配置在 docker 启动脚本里面 –dns=1.1.1.1    <code>docker run -it --rm --dns 223.6.6.6 centos bash</code></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>1、新装docker，检查硬盘内容和分区<br>目前 docker 的默认存储引擎为 overlay2，需要磁盘分区支持 d-type 文件分层功能，因此需要系统磁盘的额外支持<br>xfs_info  /    ftype=1    如果ftype=0时，那么需要在格式化的时候加上参数-n ftype=1<br><strong>修改存储引擎会丢失数据，建议使用docker挂载一个大的硬盘，重新挂载也会丢失数据</strong><br>2、使用国内aliyun加速器    <a target="_blank" rel="noopener" href="http://cr.console.aliyun.com/">http://cr.console.aliyun.com/</a><br>下载完镜像可以上专到公司内的Hub上<br>3、删除镜像<br>先删除容器 docker ps -a查看<br>docker rmi 容器ID/容器名称    先删除ID才可以删除镜像<br>docker image rm 镜像名<br>4、启动一个容器<br>标准输入进入到窗口it   interactive tty<br>docker run -i -t centos bash        #bash是命令<br><strong>容器退出，里面的数据是不会保留的，退出容器不退出    ctrl+p+q    后面启动，一般很少这样启动</strong><br>5、docker exec -it 容器ID/容器名称 bash 进入后台容器<br>6、端口映射 </p>
+<pre><code class="bash">docker -it -d -p 192.168.10.2:80:80 -p 443:443/tcp -p 53:53/udp nginx --name web1 命令可省略
+docker -it -p -d 本地端口：容器端口 镜像名称 命令，可省略
+</code></pre>
+<p>7、<strong>docker里面不支持systemctl 启动服务，只能运行二进制文件执行</strong><br>8、docker查看端口映射    docker port 容器名称/ID<br>9、docker run -d –it –name nginx-web -p 80:80 -p 1.1.1.1:443:443 nginx<br>10、删除容器    -v存储盘也删除了，不保存记录<br>docker rm -fv <code>docker ps -a -q</code><br>11、测试启动，只启动一次，验证镜像是否正常，单次运行<br>docker run -it –rm -P –name nginx1 nginx<br>12、传递命令给后台某一个容器<br>容器停止和启动，一般不会，主要针对 Hub镜像服务重启，数据库也可以这样使用<br>13、建议使用exec或者nsenter，attach是共享的    有bash环境才可以进的去</p>
+<pre><code class="bash">docker inspect -f 容器ID
+docker inspect -f &quot;&#123;&#123;.State.Pid&#125;&#125;&quot; 容器名称 
+nsenter -t 容器PID -m -u -i -n -p
+</code></pre>
+<p>14、kill掉窗口也能使用docker start 容器ID/容器名称 启动<br>15、<strong>容器默认的DNS是宿主主机，或者启动时加参数指定DNS</strong><br><code>docker run -it --rm --dns 1.1.1.1 centos bash</code></p>
+<p>常用操作：搜索、下载、导出、导入、删除</p>
+<pre><code class="bash">docker load -i centos-latest.tar.xz #导入本地镜像
+docker save -o /tmp/centos.tar centos #导出镜像
+docker rmi 镜像 ID/镜像名称 #删除指定 ID 的镜像，通过镜像启动容器的时候镜像不能被删除，除非将容器全部关闭
+docker rm 容器 ID/容器名称 #删除容器
+docker rm 容器 ID/容器名-f #强制删除正在运行的容器
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>docker----1基础命令</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">6.5k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="Final233">Final233</a></p>
+    <p><span class="copy-title">发布时间:</span>2021-07-07, 15:12:50</p>
+    <p><span class="copy-title">最后更新:</span>2021-02-28, 18:52:22</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2021/07/07/docker----1%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" title="docker----1基础命令">http://example.com/2021/07/07/docker----1%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2019-2063 Final233
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
