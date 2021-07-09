@@ -1,0 +1,2841 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>kubernets----Service6 | Final233</title>
+  <meta name="keywords" content=" Kubernetes ">
+  <meta name="description" content="kubernets----Service6 | Final233">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="页面未找到！">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="http://example.com/404.html">
+<meta property="og:site_name" content="Final233">
+<meta property="og:description" content="页面未找到！">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-09-27T06:07:13.000Z">
+<meta property="article:modified_time" content="2019-09-27T06:12:41.000Z">
+<meta property="article:author" content="Final233">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Final233" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>Final233</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/final233"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="csdn"
+               href="http://cnblogs.com/fina"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-csdn"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:438803792@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=438803792&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=121232718"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(155)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="ACP云计算">
+                        
+                        ACP云计算
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Bash">
+                        
+                        Bash
+                        <small>(7)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Docker">
+                        
+                        Docker
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Kubernetes">
+                        
+                        Kubernetes
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Linux
+                        <small>(91)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Linux<--->ansible">
+                                        
+                                        ansible
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->haproxy">
+                                        
+                                        haproxy
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->httpd">
+                                        
+                                        httpd
+                                        
+                                            <small>(4
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->keepalived">
+                                        
+                                        keepalived
+                                        
+                                            <small>(3
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                                <li>
+                                    <div data-rel="Linux<--->redis">
+                                        
+                                        redis
+                                        
+                                            <small>(6
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Mariadb">
+                        
+                        Mariadb
+                        <small>(19)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Nginx">
+                        
+                        Nginx
+                        <small>(7)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Openstack">
+                        
+                        Openstack
+                        <small>(12)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Other">
+                        
+                        Other
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Windows">
+                        
+                        Windows
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="155">
+<input type="hidden" id="yelog_site_word_count" value="395.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>$PATH</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>二进制日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>慢查询</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>事务日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ACP云计算</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>aide</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>alias</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ansible</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>at</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>awk</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Bash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bind</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bond</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>bridge</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>busybox</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>case</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chgrp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chmod</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>chrony</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cobbler</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cron</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>cut</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>date</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>dhcpd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>dig</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>dropbear</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Engine</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>expect</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>find</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>firewalld</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>for</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ftp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>function</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>FUNCTION</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>galera cluster</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>getfacl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grant</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grep</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grub</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>grub2</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>gz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>haproxy</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>help</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>history</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>http</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>httpd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hwclock</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>if</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>index</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>inotify</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>iptables</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ipvsadm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>keepalived</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kickstart</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ks8</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Kubernetes</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kvm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lamp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ln</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>locate</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lock</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>logrotate</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ls</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lvs</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>make</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>man</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mariadb</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mariadb</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mha</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mkdir</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mtr</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mv</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mysql</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mysqldump</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>mysqlslap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nfs</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Nginx</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nmcli</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nslookup</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>openssh</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>openssl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Openstack</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pam</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>passwd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pkg</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>playbook</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>powerdns</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PROCEDURE</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>PS1</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>pwd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Query cache</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>redis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rpm</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rsync</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>rsyslog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>samba</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>scp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>screen</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sed</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>select</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>seq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>setfacl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sftp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>soft</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>su</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>sudo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>systemd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tar</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcpdmatch</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcpdump</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>team</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>telnet</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>test</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tftp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>timedatectl</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tools</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tr</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tracepath</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>traceroute</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Transactions</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>trap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tree</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>TRIGGER</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>uniq</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>useradd</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>view</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>visudo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>vnc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>whatis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>while</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>windows</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>wrappers</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>xtrabackup</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>xz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>yum</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>zip</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="全部文章 Kubernetes "
+           href="/2021/07/09/kubernetes----Service6/"
+           data-tag="Kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernets----Service6">kubernets----Service6</span>
+            <span class="post-date" title="2021-07-09 15:05:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 ACP云计算 "
+           href="/2021/07/09/ACP%E4%BA%91%E8%AE%A1%E7%AE%973----%E4%BA%91%E5%AD%98%E5%82%A8/"
+           data-tag="ACP云计算"
+           data-author="" >
+            <span class="post-title" title="ACP云计算3----云存储">ACP云计算3----云存储</span>
+            <span class="post-date" title="2021-07-09 14:28:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 ACP云计算 "
+           href="/2021/07/09/ACP%E4%BA%91%E8%AE%A1%E7%AE%972----%E5%BC%B9%E6%80%A7%E8%AE%A1%E7%AE%97%E6%9C%8D%E5%8A%A1ECS/"
+           data-tag="ACP云计算"
+           data-author="" >
+            <span class="post-title" title="ACP云计算2----弹性计算服务ECS">ACP云计算2----弹性计算服务ECS</span>
+            <span class="post-date" title="2021-07-09 14:28:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 ACP云计算 "
+           href="/2021/07/09/ACP%E4%BA%91%E8%AE%A1%E7%AE%971----%E9%98%BF%E9%87%8C%E4%BA%91%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84/"
+           data-tag="ACP云计算"
+           data-author="" >
+            <span class="post-title" title="ACP云计算1----阿里云整体架构">ACP云计算1----阿里云整体架构</span>
+            <span class="post-date" title="2021-07-09 14:28:00">2021/07/09</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E6%95%B0%E7%BB%84/"
+           data-tag="Bash"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell数组">linux基础----shell数组</span>
+            <span class="post-date" title="2021-07-07 16:31:54">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----6cluster/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----6cluster">redis----6cluster</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----4%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----4消息队列">redis----4消息队列</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----5%E4%B8%BB%E4%BB%8E/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----5主从">redis----5主从</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----2%E9%83%A8%E7%BD%B2%E5%8F%8A%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----2部署及配置">redis----2部署及配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----3%E6%8C%81%E4%B9%85%E5%8C%96%E5%8F%8A%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----3持久化及数据类型">redis----3持久化及数据类型</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux redis "
+           href="/2021/07/07/redis----1%E7%BC%93%E5%AD%98%E6%A6%82%E5%BF%B5/"
+           data-tag="linux,redis"
+           data-author="" >
+            <span class="post-title" title="redis----1缓存概念">redis----1缓存概念</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/nginx----5%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"
+           data-tag="Nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----5反向代理">nginx----5反向代理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/nginx----%E9%80%9F%E6%9F%A5/"
+           data-tag="Nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----速查">nginx----速查</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/nginx----4Rewrite/"
+           data-tag="Nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----4Rewrite">nginx----4Rewrite</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/nginx----3%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE/"
+           data-tag="Nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----3高级配置">nginx----3高级配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/nginx----2%E5%9F%BA%E7%A1%80/"
+           data-tag="Nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----2基础">nginx----2基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----9%E4%BA%8B%E5%8A%A1/"
+           data-tag="Mariadb,Transactions,lock"
+           data-author="" >
+            <span class="post-title" title="mariadb----9事务">mariadb----9事务</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/nginx----1%E5%8E%9F%E7%90%86/"
+           data-tag="Nginx"
+           data-author="" >
+            <span class="post-title" title="nginx----1原理">nginx----1原理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----7%E6%9F%A5%E8%AF%A2%E7%BC%93%E5%AD%98/"
+           data-tag="Mariadb,Query cache"
+           data-author="" >
+            <span class="post-title" title="mariadb----7查询缓存">mariadb----7查询缓存</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----8%E7%B4%A2%E5%BC%95/"
+           data-tag="Mariadb,index"
+           data-author="" >
+            <span class="post-title" title="mariadb----8索引">mariadb----8索引</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----5%E8%A7%86%E5%9B%BE%E3%80%81%E5%87%BD%E6%95%B0%E3%80%81%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B%E3%80%81%E8%A7%A6%E5%8F%91%E5%99%A8%E3%80%81%20%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
+           data-tag="Mariadb,view,PROCEDURE,grant,FUNCTION,TRIGGER"
+           data-author="" >
+            <span class="post-title" title="mariadb----5视图、函数、存储过程、触发器、 权限管理">mariadb----5视图、函数、存储过程、触发器、 权限管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----6%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/"
+           data-tag="Mariadb,Engine"
+           data-author="" >
+            <span class="post-title" title="mariadb----6存储引擎">mariadb----6存储引擎</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----3%E5%A4%9A%E5%AE%9E%E4%BE%8B/"
+           data-tag="Mariadb"
+           data-author="" >
+            <span class="post-title" title="mariadb----3多实例">mariadb----3多实例</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----4SQL%E8%AF%AD%E5%8F%A5/"
+           data-tag="Mariadb"
+           data-author="" >
+            <span class="post-title" title="mariadb----4SQL语句">mariadb----4SQL语句</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----2%E5%AE%89%E8%A3%85/"
+           data-tag="Mariadb"
+           data-author="" >
+            <span class="post-title" title="mariadb----2安装">mariadb----2安装</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----19%E6%80%A7%E8%83%BD%E8%A1%A1%E9%87%8F%E6%8C%87%E6%A0%87/"
+           data-tag="Mariadb,mysqlslap"
+           data-author="" >
+            <span class="post-title" title="mariadb----19性能衡量指标">mariadb----19性能衡量指标</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----1%E5%9F%BA%E7%A1%80/"
+           data-tag="Mariadb"
+           data-author="" >
+            <span class="post-title" title="mariadb----1基础">mariadb----1基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----17MHA/"
+           data-tag="Mariadb,mha"
+           data-author="" >
+            <span class="post-title" title="mariadb----17MHA">mariadb----17MHA</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----18GaleraCluster/"
+           data-tag="Mariadb,galera cluster"
+           data-author="" >
+            <span class="post-title" title="mariadb----18Galera Cluster">mariadb----18Galera Cluster</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----15%E5%AE%89%E5%85%A8%E5%A4%8D%E5%88%B6/"
+           data-tag="Mariadb,mariadb"
+           data-author="" >
+            <span class="post-title" title="mariadb----15安全复制">mariadb----15安全复制</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----16%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB/"
+           data-tag="Mariadb"
+           data-author="" >
+            <span class="post-title" title="mariadb----16读写分离">mariadb----16读写分离</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----14%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B62/"
+           data-tag="Mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----14主从复制2">mariadb----14主从复制2</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----13%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B61/"
+           data-tag="Mariadb,mysql"
+           data-author="" >
+            <span class="post-title" title="mariadb----13主从复制1">mariadb----13主从复制1</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----12xtrabackup/"
+           data-tag="Mariadb,xtrabackup"
+           data-author="" >
+            <span class="post-title" title="mariadb----12xtrabackup">mariadb----12xtrabackup</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----11%E5%A4%87%E4%BB%BD%E5%92%8C%E6%81%A2%E5%A4%8D/"
+           data-tag="Mariadb,mysqldump"
+           data-author="" >
+            <span class="post-title" title="mariadb----11备份和恢复">mariadb----11备份和恢复</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/llinux%E6%9C%8D%E5%8A%A1----VNC/"
+           data-tag="linux,vnc"
+           data-author="" >
+            <span class="post-title" title="linux服务----VNC">linux服务----VNC</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Mariadb "
+           href="/2021/07/07/mariadb----10%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86/"
+           data-tag="Mariadb,日志,事务日志,慢查询,二进制日志"
+           data-author="" >
+            <span class="post-title" title="mariadb----10日志管理">mariadb----10日志管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----%E4%B8%BB%E4%BB%8E%E3%80%81%E5%AD%90%E5%9F%9F%E3%80%81%E8%BD%AC%E5%8F%91/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux服务----主从、子域、转发">linux服务----主从、子域、转发</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----%E5%AE%9E%E7%8E%B0Internet-DNS%E6%9E%B6%E6%9E%84/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux服务----实现Internet DNS架构">linux服务----实现Internet DNS架构</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----SAMBA/"
+           data-tag="linux,samba"
+           data-author="" >
+            <span class="post-title" title="linux服务----SAMBA">linux服务----SAMBA</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----rsync/"
+           data-tag="linux,rsync,inotify"
+           data-author="" >
+            <span class="post-title" title="linux服务----rsync">linux服务----rsync</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----PXE/"
+           data-tag="linux,http,kickstart,dhcpd,tftp"
+           data-author="" >
+            <span class="post-title" title="linux服务----PXE">linux服务----PXE</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----NFS/"
+           data-tag="linux,nfs"
+           data-author="" >
+            <span class="post-title" title="linux服务----NFS">linux服务----NFS</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----powerdns/"
+           data-tag="linux,powerdns"
+           data-author="" >
+            <span class="post-title" title="linux服务----powerdns">linux服务----powerdns</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Nginx "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----LNMP/"
+           data-tag="linux,Nginx"
+           data-author="" >
+            <span class="post-title" title="linux服务----LNMP">linux服务----LNMP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----LVS/"
+           data-tag="linux,lvs,ipvsadm"
+           data-author="" >
+            <span class="post-title" title="linux服务----LVS">linux服务----LVS</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----KVM/"
+           data-tag="linux,kvm"
+           data-author="" >
+            <span class="post-title" title="linux服务----KVM">linux服务----KVM</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----LAMP/"
+           data-tag="linux,lamp"
+           data-author="" >
+            <span class="post-title" title="linux服务----LAMP">linux服务----LAMP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----iptables/"
+           data-tag="linux,iptables"
+           data-author="" >
+            <span class="post-title" title="linux服务----iptables">linux服务----iptables</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----firewalld/"
+           data-tag="linux,firewalld"
+           data-author="" >
+            <span class="post-title" title="linux服务----firewalld">linux服务----firewalld</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----FTP/"
+           data-tag="linux,ftp"
+           data-author="" >
+            <span class="post-title" title="linux服务----FTP">linux服务----FTP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----cdn/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux服务----CDN">linux服务----CDN</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----cobbler/"
+           data-tag="linux,cobbler"
+           data-author="" >
+            <span class="post-title" title="linux服务----cobbler">linux服务----cobbler</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E9%80%BB%E8%BE%91%E5%8D%B7/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----逻辑卷">linux基础----逻辑卷</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E6%9C%8D%E5%8A%A1----bind/"
+           data-tag="linux,bind"
+           data-author="" >
+            <span class="post-title" title="linux服务----bind">linux服务----bind</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/"
+           data-tag="linux,rpm,make,pkg"
+           data-author="" >
+            <span class="post-title" title="linux基础----软件包管理">linux基础----软件包管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E3%80%81%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----进程管理">linux基础----进程管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%B7%AF%E7%94%B1%E8%A1%A8%E5%92%8C%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,nmcli"
+           data-author="" >
+            <span class="post-title" title="linux基础----路由表和网络配置">linux基础----路由表和网络配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络设备工作原理">linux基础----网络设备工作原理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1/"
+           data-tag="linux,at,cron"
+           data-author="" >
+            <span class="post-title" title="linux基础----计划任务">linux基础----计划任务</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7/"
+           data-tag="linux,mtr,traceroute,tracepath,dig,nslookup"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络工具">linux基础----网络工具</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E5%B7%A5%E5%85%B7%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80/"
+           data-tag="linux,nc,telnet"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络工具瑞士军刀">linux基础----网络工具瑞士军刀</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BB%88%E7%AB%AF%E9%A2%9C%E8%89%B2/"
+           data-tag="linux,PS1"
+           data-author="" >
+            <span class="post-title" title="linux基础----终端颜色">linux基础----终端颜色</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%92%8C%E7%AE%A1%E7%90%86/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----网络协议和管理">linux基础----网络协议和管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1systemd/"
+           data-tag="linux,systemd"
+           data-author="" >
+            <span class="post-title" title="linux基础----管理系统服务systemd">linux基础----管理系统服务systemd</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----系统启动流程">linux基础----系统启动流程</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----磁盘分区">linux基础----磁盘分区</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E7%A3%81%E7%9B%98%E5%AD%98%E5%82%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----磁盘存储">linux基础----磁盘存储</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"
+           data-tag="linux,useradd,chmod,passwd,chgrp,chown,setfacl,getfacl"
+           data-author="" >
+            <span class="post-title" title="linux基础----权限管理">linux基础----权限管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%A0%87%E5%87%86IO%E5%92%8C%E7%AE%A1%E9%81%93/"
+           data-tag="linux,seq,tr"
+           data-author="" >
+            <span class="post-title" title="linux基础----标准I/O和管道">linux基础----标准I/O和管道</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%97%B6%E9%97%B4/"
+           data-tag="linux,date,hwclock,timedatectl,cal"
+           data-author="" >
+            <span class="post-title" title="linux基础----时间/时钟同步/时区/日历">linux基础----时间/时钟同步/时区/日历</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%B7%A5%E5%85%B7/"
+           data-tag="linux,cut,uniq"
+           data-author="" >
+            <span class="post-title" title="linux基础----文本处理工具">linux基础----文本处理工具</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86/"
+           data-tag="linux,logrotate,rsyslog"
+           data-author="" >
+            <span class="post-title" title="linux基础----日志管理">linux基础----日志管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/"
+           data-tag="linux,pwd,ls,rm,cp,mv,ln,mkdir,tree"
+           data-author="" >
+            <span class="post-title" title="linux基础----文件管理">linux基础----文件管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----文件系统">linux基础----文件系统</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%AE%9A%E5%88%B6linux/"
+           data-tag="linux,busybox"
+           data-author="" >
+            <span class="post-title" title="linux基础----定制linux">linux基础----定制linux</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/"
+           data-tag="linux,locate,find"
+           data-author="" >
+            <span class="post-title" title="linux基础----文件查找">linux基础----文件查找</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%91%BD%E4%BB%A4%E4%BC%98%E5%85%88%E7%BA%A7/"
+           data-tag="linux,help,bash,alias,hash,$PATH"
+           data-author="" >
+            <span class="post-title" title="linux基础----内部命令/外部命令/别名/清空命令缓存表">linux基础----内部命令/外部命令/别名/清空命令缓存表</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8E%86%E5%8F%B2/"
+           data-tag="linux,history"
+           data-author="" >
+            <span class="post-title" title="linux基础----命令行历史">linux基础----命令行历史</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"
+           data-tag="linux,tar,xz,zip,gz"
+           data-author="" >
+            <span class="post-title" title="linux基础----压缩工具">linux基础----压缩工具</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%86%85%E5%AD%98%E5%B8%A6%E5%AE%BD%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----内存带宽">linux基础----内存带宽</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----%E5%8A%A0%E5%AF%86%E5%92%8C%E5%AE%89%E5%85%A8/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----加密和安全">linux基础----加密和安全</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----yum/"
+           data-tag="linux,yum"
+           data-author="" >
+            <span class="post-title" title="linux基础----yum">linux基础----yum</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----TCP_Wrappers/"
+           data-tag="linux,tcpdmatch,wrappers"
+           data-author="" >
+            <span class="post-title" title="linux基础----TCP_Wrappers">linux基础----TCP_Wrappers</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----TCPIP%E5%8D%8F%E8%AE%AE%E6%A0%88/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----TCP/IP协议栈">linux基础----TCP/IP协议栈</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----sudo/"
+           data-tag="linux,su,sudo,visudo,aide"
+           data-author="" >
+            <span class="post-title" title="linux基础----sudo">linux基础----sudo</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----tcpdump/"
+           data-tag="linux,tcpdump"
+           data-author="" >
+            <span class="post-title" title="linux基础----抓包工具tcpdump">linux基础----抓包工具tcpdump</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E9%80%9F%E6%9F%A5/"
+           data-tag="Bash"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell速查">linux基础----shell速查</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%9F%BA%E7%A1%80/"
+           data-tag="Bash"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell基础">linux基础----shell基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%BE%AA%E7%8E%AF/"
+           data-tag="Bash,for,while,select"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell循环">linux基础----shell循环</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%87%BD%E6%95%B0/"
+           data-tag="Bash,function,trap"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell函数">linux基础----shell函数</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell%E5%88%86%E6%94%AF/"
+           data-tag="linux,Bash,if,case"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell分支">linux基础----shell分支</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----selinux/"
+           data-tag="linux,yum"
+           data-author="" >
+            <span class="post-title" title="linux基础----selinux">linux基础----selinux</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Bash "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----shell-expect/"
+           data-tag="Bash,expect"
+           data-author="" >
+            <span class="post-title" title="linux基础----shell-expect">linux基础----shell-expect</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----sed%E4%B8%89%E5%89%91%E5%AE%A2%E4%B9%8B%E4%B8%80/"
+           data-tag="linux,sed"
+           data-author="" >
+            <span class="post-title" title="linux基础----sed 三剑客之一">linux基础----sed 三剑客之一</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----RAID/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----RAID">linux基础----RAID</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----screen/"
+           data-tag="linux,screen"
+           data-author="" >
+            <span class="post-title" title="linux基础----screen">linux基础----screen</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----PAM%E8%AE%A4%E8%AF%81%E6%9C%BA%E5%88%B6/"
+           data-tag="linux,pam"
+           data-author="" >
+            <span class="post-title" title="linux基础----PAM认证机制">linux基础----PAM认证机制</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----openssh/"
+           data-tag="linux,rsync,openssh,scp,sftp,dropbear"
+           data-author="" >
+            <span class="post-title" title="linux基础----openssh">linux基础----openssh</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----motd/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----开机登录提示">linux基础----开机登录提示</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----ntp/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----NTP">linux基础----NTP</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----IP%E5%9C%B0%E5%9D%80/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----IP地址">linux基础----IP地址</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----help/"
+           data-tag="linux,help,whatis,man"
+           data-author="" >
+            <span class="post-title" title="linux基础----获取帮助">linux基础----获取帮助</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----grub%E4%BF%AE%E5%A4%8D%E4%B9%8Bcentos7/"
+           data-tag="linux,grub2"
+           data-author="" >
+            <span class="post-title" title="linux基础----grub修复之centos7">linux基础----grub修复之centos7</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----grep%E4%B8%89%E5%89%91%E5%AE%A2%E4%B9%8B%E4%B8%80/"
+           data-tag="linux,grep"
+           data-author="" >
+            <span class="post-title" title="linux基础----grep">linux基础----grep</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----grub%E4%BF%AE%E5%A4%8D%E4%B9%8Bcentos6/"
+           data-tag="linux,grub"
+           data-author="" >
+            <span class="post-title" title="linux基础----grub修复之centos6">linux基础----grub修复之centos6</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----for/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----for循环">linux基础----for循环</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----chrony/"
+           data-tag="linux,chrony"
+           data-author="" >
+            <span class="post-title" title="linux基础----时间同步和chrony">linux基础----时间同步和chrony</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----bridge/"
+           data-tag="linux,bridge"
+           data-author="" >
+            <span class="post-title" title="linux基础----桥接bridge">linux基础----桥接bridge</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----CA%E5%92%8C%E8%AF%81%E4%B9%A6/"
+           data-tag="linux,openssl"
+           data-author="" >
+            <span class="post-title" title="linux基础----CA和证书">linux基础----CA和证书</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----bash%E5%BF%AB%E6%8D%B7%E5%81%A5/"
+           data-tag="linux"
+           data-author="" >
+            <span class="post-title" title="linux基础----bash快捷键">linux基础----bash快捷键</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----bond%20team/"
+           data-tag="linux,bond,team"
+           data-author="" >
+            <span class="post-title" title="linux基础----网卡绑定bond和链路聚合team">linux基础----网卡绑定bond和链路聚合team</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2021/07/07/linux%E5%9F%BA%E7%A1%80----awk%E4%B8%89%E5%89%91%E5%AE%A2%E4%B9%8B%E4%B8%80/"
+           data-tag="linux,awk"
+           data-author="" >
+            <span class="post-title" title="linux基础----awk">linux基础----awk</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Kubernetes "
+           href="/2021/07/07/kubernetes----%E8%B5%84%E6%BA%90%E6%8E%A7%E5%88%B6%E5%99%A85/"
+           data-tag="Kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----资源控制器5">kubernetes----资源控制器5</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Kubernetes "
+           href="/2021/07/07/kubernetes----%E8%B5%84%E6%BA%90%E6%B8%85%E5%8D%954/"
+           data-tag="Kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----资源清单4">kubernetes----资源清单4</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Kubernetes "
+           href="/2021/07/07/kubernetes----%E5%9F%BA%E7%A1%801/"
+           data-tag="Kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----基础1">kubernetes----基础1</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Kubernetes "
+           href="/2021/07/07/kubernetes----%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%852/"
+           data-tag="Kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----自动化安装2">kubernetes----自动化安装2</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux keepalived "
+           href="/2021/07/07/keepalived----3%E7%BB%84%E5%90%88/"
+           data-tag="linux,keepalived"
+           data-author="" >
+            <span class="post-title" title="keepalived----3组合">keepalived----3组合</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Kubernetes "
+           href="/2021/07/07/kubernetes----%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%AE%89%E8%A3%853/"
+           data-tag="Kubernetes"
+           data-author="" >
+            <span class="post-title" title="kubernetes----二进制安装3">kubernetes----二进制安装3</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux keepalived "
+           href="/2021/07/07/keepalived----1%E7%AE%80%E4%BB%8B/"
+           data-tag="linux,keepalived"
+           data-author="" >
+            <span class="post-title" title="keepalived----1简介">keepalived----1简介</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux keepalived "
+           href="/2021/07/07/keepalived----2%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,keepalived"
+           data-author="" >
+            <span class="post-title" title="keepalived----2安装及配置">keepalived----2安装及配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/httpd----3%E5%8D%8F%E8%AE%AE/"
+           data-tag="linux,http"
+           data-author="" >
+            <span class="post-title" title="httpd----3协议">httpd----3协议</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/httpd----2%E9%85%8D%E7%BD%AE%E5%8F%8A%E9%83%A8%E7%BD%B2/"
+           data-tag="linux,httpd"
+           data-author="" >
+            <span class="post-title" title="httpd----2配置及部署">httpd----2配置及部署</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----4ACL/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----4ACL">haproxy----4ACL</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux httpd "
+           href="/2021/07/07/httpd----1%E5%9F%BA%E7%A1%80/"
+           data-tag="linux,httpd"
+           data-author="" >
+            <span class="post-title" title="httpd----1基础">httpd----1基础</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----3%E4%BF%AE%E6%94%B9%E6%8A%A5%E6%96%87%E9%A6%96%E9%83%A8%E3%80%81%E6%97%A5%E5%BF%97%E3%80%81%E5%8E%8B%E7%BC%A9%E3%80%81%E7%8A%B6%E6%80%81%E7%9B%91%E6%B5%8B/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----3修改报文首部、日志、压缩、状态监测">haproxy----3修改报文首部、日志、压缩、状态监测</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----1%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----1安装及配置">haproxy----1安装及配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux haproxy "
+           href="/2021/07/07/haproxy----2%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E5%8F%8A%E7%8A%B6%E6%80%81%E9%A1%B5/"
+           data-tag="linux,haproxy"
+           data-author="" >
+            <span class="post-title" title="haproxy----2调度算法及状态页">haproxy----2调度算法及状态页</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Docker "
+           href="/2021/07/07/docker----5%E9%95%9C%E5%83%8F%E4%BB%93%E5%BA%93harbor/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker----5镜像仓库harbor">docker----5镜像仓库harbor</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Docker "
+           href="/2021/07/07/docker----6docker%20compose/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker----6docker compose">docker----6docker compose</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Docker "
+           href="/2021/07/07/docker----3%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker----3数据管理">docker----3数据管理</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Docker "
+           href="/2021/07/07/docker----4%E7%BD%91%E7%BB%9C%E9%83%A8%E5%88%86/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker----4网络部分">docker----4网络部分</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Docker "
+           href="/2021/07/07/docker----2%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker----2镜像制作">docker----2镜像制作</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Docker "
+           href="/2021/07/07/docker----1%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/"
+           data-tag="Docker"
+           data-author="" >
+            <span class="post-title" title="docker----1基础命令">docker----1基础命令</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----4playbook/"
+           data-tag="linux,ansible,playbook"
+           data-author="" >
+            <span class="post-title" title="ansible-4playbook">ansible-4playbook</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----3%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"
+           data-tag="linux,ansible"
+           data-author="" >
+            <span class="post-title" title="ansible-3模块使用说明">ansible-3模块使用说明</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----2%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"
+           data-tag="linux,ansible"
+           data-author="" >
+            <span class="post-title" title="ansible-2安装与配置">ansible-2安装与配置</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Linux ansible "
+           href="/2021/07/07/ansible----1%E7%AE%80%E4%BB%8B/"
+           data-tag="linux,ansible"
+           data-author="" >
+            <span class="post-title" title="ansible-1简介">ansible-1简介</span>
+            <span class="post-date" title="2021-07-07 15:12:50">2021/07/07</span>
+        </a>
+        
+        <a  class="全部文章 Windows "
+           href="/2020/02/23/windows-soft/"
+           data-tag="windows,soft"
+           data-author="" >
+            <span class="post-title" title="windows----windows 常用软件">windows----windows 常用软件</span>
+            <span class="post-date" title="2020-02-23 18:33:00">2020/02/23</span>
+        </a>
+        
+        <a  class="全部文章 Other "
+           href="/2019/10/23/blog----%E7%AC%94%E8%AE%B0%E5%A4%87%E4%BB%BD/"
+           data-tag="tools"
+           data-author="" >
+            <span class="post-title" title="blogs----笔记备份">blogs----笔记备份</span>
+            <span class="post-date" title="2019-10-23 17:10:00">2019/10/23</span>
+        </a>
+        
+        <a  class="全部文章 Windows "
+           href="/2019/10/23/windows-win10%E4%BC%98%E5%8C%96/"
+           data-tag="windows"
+           data-author="" >
+            <span class="post-title" title="windows----win10优化">windows----win10优化</span>
+            <span class="post-date" title="2019-10-23 15:08:00">2019/10/23</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-10%E5%AE%9E%E7%8E%B0VPC%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-10实现VPC自定义网络">openstack-10实现VPC自定义网络</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-11%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-11镜像制作">openstack-11镜像制作</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-12%E8%A1%A5%E5%85%85/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-12补充">openstack-12补充</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-1%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-1基础环境准备">openstack-1基础环境准备</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-2%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-2环境准备">openstack-2环境准备</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-3keystone(%E8%AE%A4%E8%AF%81%E6%9C%8D%E5%8A%A1)/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-3keystone(认证服务)">openstack-3keystone(认证服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-7dashboard(%E4%BB%AA%E8%A1%A8%E7%9B%98)/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-7dashboard(仪表盘)">openstack-7dashboard(仪表盘)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-8%E5%AE%9E%E7%8E%B0%E5%86%85%E5%A4%96%E7%BD%91%E7%BB%93%E6%9E%84/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-8实现内外网结构">openstack-8实现内外网结构</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-9%E5%9D%97%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1%EF%BC%88%E6%AD%A4%E6%9C%8D%E5%8A%A1%E5%8F%AF%E9%80%89%EF%BC%89/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-9块存储服务（此服务可选）">openstack-9块存储服务（此服务可选）</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-4glance(%E9%95%9C%E5%83%8F%E6%9C%8D%E5%8A%A1)/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-4glance(镜像服务)">openstack-4glance(镜像服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-5computer(%E8%AE%A1%E7%AE%97%E6%9C%8D%E5%8A%A1)/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-5computer(计算服务)">openstack-5computer(计算服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Openstack "
+           href="/2019/09/27/openstack-6neutron(%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1)/"
+           data-tag="Openstack"
+           data-author="" >
+            <span class="post-title" title="openstack-6neutron(网络服务)">openstack-6neutron(网络服务)</span>
+            <span class="post-date" title="2019-09-27 10:00:00">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 Other "
+           href="/2019/09/26/test-test233/"
+           data-tag="test"
+           data-author="" >
+            <span class="post-title" title="test----test">test----test</span>
+            <span class="post-date" title="2019-09-26 11:39:00">2019/09/26</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/2019/09/02/k8s%E7%8E%AF%E5%A2%83/"
+           data-tag="ks8"
+           data-author="" >
+            <span class="post-title" title="k8s环境">k8s环境</span>
+            <span class="post-date" title="2019-09-02 14:58:00">2019/09/02</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-kubernetes----Service6" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">kubernets----Service6</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Kubernetes">Kubernetes</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Kubernetes</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-07-09 15:05:33'>2021-07-09 15:05</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:3.1k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#service"><span class="toc-text">service</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#service%E7%B1%BB%E5%9E%8B"><span class="toc-text">service类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VIP%E5%92%8CService%E4%BB%A3%E7%90%86"><span class="toc-text">VIP和Service代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-text">代理模式的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#userspace%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">userspace代理模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#iptables%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">iptables代理模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ipvs%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-text">ipvs代理模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clusterip"><span class="toc-text">clusterip</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-text">示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Headless-Service"><span class="toc-text">Headless Service</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B-1"><span class="toc-text">示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NodePort"><span class="toc-text">NodePort</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LoadBalancer"><span class="toc-text">LoadBalancer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ExternalName"><span class="toc-text">ExternalName</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ingress-Nginx"><span class="toc-text">Ingress-Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="service"><a href="#service" class="headerlink" title="service"></a>service</h1><p>Kubernetes  Service  定义了这样一种抽象：一个  Pod  的逻辑分组，一种可以访问它们的策略 —— 通常称为微服务。 这一组  Pod  能够被  Service  访问到，通常是通过  Label Selector</p>
+<p>Service能够提供负载均衡的能力，但是在使用上有以下限制：<br>只提供 4 层负载均衡能力，而没有 7 层功能，但有时我们可能需要更多的匹配规则来转发请求，这点上 4 层负载均衡是不支持的</p>
+<p>SVC监控POD中标签的信息，将POD的IP加入到IPVS规则中，简单来说就是服务发现<br>POD下定义标签，一个或多个<br>SVC可以根据标签，来匹配，可匹配一个或者多个<br>用户或负载均衡来访问SVC即可</p>
+<h2 id="service类型"><a href="#service类型" class="headerlink" title="service类型"></a>service类型</h2><blockquote>
+<p>ClusterIp：默认类型，自动分配一个仅 Cluster 内部可以访问的虚拟 IP </p>
+<ul>
+<li>只能被集群内部访问，简单来说就是NODE节点可以访问<br>NodePort：<strong>在 ClusterIP 基础上为 Service 在每台机器上绑定一个端口</strong>，这样就可以通过 : NodePort 来访问该服务 </li>
+<li>SVC默认类型</li>
+<li>例访问NODE 30001端口，转发给后端的80，相当于端口转发</li>
+<li>无论访问哪个NODE节点都可以转发，前提没有对NODE节点设置污点<br>LoadBalancer：<strong>在 NodePort 的基础上，借助 cloud provider 创建一个外部负载均衡器</strong>，并将请求转发到: NodePort </li>
+<li>使用去供应商来进行访问，收费的，借助去云供应商还访问<br>ExternalName：<strong>把集群外部的服务引入到集群内部来，在集群内部直接使用</strong>。没有任何类型代理被创建，这只有 kubernetes 1.7 或更高版本的 kube-dns 才支持 </li>
+<li>集群访问内部访问集群外部的服务（外网的IP，或某一个机房的服务），只需访问IP即可，集群内部会实现SVC的代理</li>
+<li>外部服务若地址更新，只需要更新SVC即可，SVC会在内部创建一个访问信息，写外部的访问IP/HOSTNAME及端口</li>
+</ul>
+</blockquote>
+<p><img src="/images/1617081686029.png"></p>
+<p>客户端访问由iptables来实现<br>iptables规则由kube-proxy来写入的<br>apiserver监听kube-proxy去监控和服务发现<br>kube-proxy会通过pod标签来判断是否写入SVC中</p>
+<h2 id="VIP和Service代理"><a href="#VIP和Service代理" class="headerlink" title="VIP和Service代理"></a>VIP和Service代理</h2><p>在 Kubernetes 集群中，每个 Node 运行一个  kube-proxy  进程。 kube-proxy  负责为  Service  实现了一种 VIP（虚拟 IP）的形式，而不是  ExternalName  的形式。 在 Kubernetes v1.0 版本，代理完全在 userspace。在 Kubernetes v1.1 版本，新增了 iptables 代理，但并不是默认的运行模式。 从 Kubernetes v1.2 起，默认就是iptables 代理。 在 Kubernetes v1.8.0-beta.0 中，添加了 ipvs 代理 </p>
+<p>在 Kubernetes 1.14 版本开始默认使用 ipvs 代理 </p>
+<p>在 Kubernetes v1.0 版本， Service 是 “4层”（TCP/UDP over IP）概念。 在 Kubernetes v1.1 版本，新增了 Ingress API（beta 版），用来表示 “7层”（HTTP）服务</p>
+<p><strong>IPVS目前性能最佳</strong></p>
+<p><strong>为什么不用DNS来进行负载均衡?</strong><br>DNS会在很多客户端进行缓存，<strong>主要是缓存时间</strong>，当某个节点挂了，若缓存存在，那负载均衡没有意义</p>
+<h2 id="代理模式的分类"><a href="#代理模式的分类" class="headerlink" title="代理模式的分类"></a>代理模式的分类</h2><h3 id="userspace代理模式"><a href="#userspace代理模式" class="headerlink" title="userspace代理模式"></a>userspace代理模式</h3><p>kube-proyx 压力较大 API也会监听<br>client pods –&gt; iptables –&gt; kube-proxy –&gt; server<br><img src="/images/1617082027351.png"></p>
+<h3 id="iptables代理模式"><a href="#iptables代理模式" class="headerlink" title="iptables代理模式"></a>iptables代理模式</h3><p>不需要kube-proyx增加 ，这样稳定性会增加，性能会提高，压力会减少,api<br>client pods –&gt; iptables – &gt; server<br><img src="/images/1617082063255.png"></p>
+<h3 id="ipvs代理模式"><a href="#ipvs代理模式" class="headerlink" title="ipvs代理模式"></a>ipvs代理模式</h3><p>性能比iptables性能目前最优</p>
+<p>这种模式，kube-proxy 会监视 Kubernetes Service 对象和 Endpoints ，调用 netlink 接口以相应地创建 ipvs 规则并定期与 Kubernetes Service 对象和 Endpoints 对象同步 ipvs 规则，以确保 ipvs 状态与期望一致。访问服务时，流量将被重定向到其中一个后端 Pod </p>
+<p>与 iptables 类似，ipvs 于 netfilter 的 hook 功能，但使用哈希表作为底层数据结构并在内核空间中工作。这意味着 ipvs 可以更快地重定向流量，并且在同步代理规则时具有更好的性能。此外，ipvs 为负载均衡算法提供了更多选项，例如： </p>
+<blockquote>
+<ul>
+<li>rr ：轮询调度 </li>
+<li>lc ：最小连接数 </li>
+<li>dh ：目标哈希 </li>
+<li>sh ：源哈希 </li>
+<li>sed ：最短期望延迟 </li>
+<li>nq ： 不排队调度 </li>
+</ul>
+</blockquote>
+<p><img src="/images/1617082209604.png"></p>
+<h2 id="clusterip"><a href="#clusterip" class="headerlink" title="clusterip"></a>clusterip</h2><p>clusterIP 主要在每个 node 节点使用 iptables，将发向 clusterIP 对应端口的数据，转发到 kube-proxy 中。然后 kube-proxy 自己内部实现有负载均衡的方法，并可以查询到这个 service 下对应 pod 的地址和端口，进而把数据转发给对应的 pod 的地址和端口</p>
+<p><img src="/images/1617082586182.png"></p>
+<blockquote>
+<ul>
+<li>apiserver 用户通过kubectl命令向apiserver发送创建service的命令，apiserver接收到请求后将数据存储到etcd中 </li>
+<li>kube-proxy kubernetes的每个节点中都有一个叫做kube-porxy的进程，这个进程负责感知service，pod的变化，并将变化的信息写入本地的iptables规则中 </li>
+<li>iptables 使用NAT等技术将virtualIP的流量转至endpoint中 </li>
+</ul>
+</blockquote>
+<p>API –&gt; etcd 写入<br>kube-proxy –&gt; etcd 监听里面发生的变化<br>kube-proxy –&gt; iptables/ipvs 本地，每个节点都是对应的kube-proxy进程存在</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><pre><code class="bash">[root@k8s-master test]# cat svc-deployment.yaml 
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: myapp-deploy
+  namespace: default 
+spec: 
+  replicas: 3 
+  selector: 
+    matchLabels: 
+      app: myapp 
+      release: stabel 
+  template: 
+    metadata: 
+      labels: 
+        app: myapp 
+        release: stabel 
+        env: test 
+    spec: 
+      containers: 
+      - name: myapp 
+        image: wangyanglinux/myapp:v2 
+        imagePullPolicy: IfNotPresent 
+        ports: 
+        - name: http 
+          containerPort: 80
+          
+kubectl apply -f svc-deployment.yaml 
+
+
+[root@k8s-master test]# kubectl  get pods -o wide
+NAME                            READY   STATUS    RESTARTS   AGE    IP              NODE            NOMINATED NODE   READINESS GATES
+myapp-deploy-5b6f5d558b-4k8sc   1/1     Running   0          118s   10.20.169.176   192.168.10.83   &lt;none&gt;           &lt;none&gt;
+myapp-deploy-5b6f5d558b-87gk6   1/1     Running   0          118s   10.20.169.174   192.168.10.83   &lt;none&gt;           &lt;none&gt;
+myapp-deploy-5b6f5d558b-dcp2d   1/1     Running   0          118s   10.20.169.175   192.168.10.83   &lt;none&gt;           &lt;none&gt;
+[root@k8s-master test]# curl 10.20.169.176
+Hello MyApp | Version: v2 | &lt;a href=&quot;hostname.html&quot;&gt;Pod Name&lt;/a&gt;
+
+创建一个svc
+[root@k8s-master test]# cat svc.yaml 
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: myapp 
+  namespace: default 
+spec: 
+  type: ClusterIP 
+  selector: 
+    app: myapp         #这里指定POD中的设置的标签
+    release: stabel 
+  ports: 
+  - name: http 
+    port: 80 
+    targetPort: 80 
+    
+kubectl apply -f svc.yaml
+
+[root@k8s-master test]# kubectl get svc
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+kubernetes   ClusterIP   10.10.0.1       &lt;none&gt;        443/TCP   18d
+myapp        ClusterIP   10.10.195.224   &lt;none&gt;        80/TCP    34s
+
+可以查看到ipvsadm规则已经添加了
+[root@k8s-master test]# ipvsadm -Ln|grep -A3 224
+TCP  10.10.195.224:80 rr
+  -&gt; 10.20.169.174:80             Masq    1      0          0         
+  -&gt; 10.20.169.175:80             Masq    1      0          0         
+  -&gt; 10.20.169.176:80             Masq    1      0          0
+ 
+使用svc地址访问，默认RR轮询
+[root@k8s-master test]# curl 10.10.195.224/hostname.html
+myapp-deploy-5b6f5d558b-87gk6
+[root@k8s-master test]# curl 10.10.195.224/hostname.html
+myapp-deploy-5b6f5d558b-4k8sc
+[root@k8s-master test]# curl 10.10.195.224/hostname.html
+myapp-deploy-5b6f5d558b-dcp2d
+</code></pre>
+<h2 id="Headless-Service"><a href="#Headless-Service" class="headerlink" title="Headless Service"></a>Headless Service</h2><p>有时不需要或不想要负载均衡，以及单独的 Service IP 。遇到这种情况，可以通过指定 Cluster IP(spec.clusterIP) 的值为 “None” 来创建 Headless Service 。这类 Service 并不会分配 Cluster IP， kube-proxy 不会处理它们，而且平台也不会为它们进行负载均衡和路由</p>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><pre><code class="bash">[root@k8s-master test]# cat svc-none.yaml 
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: myapp-headless 
+  namespace: default 
+spec: 
+  selector: 
+    app: myapp 
+  clusterIP: &quot;None&quot; 
+  ports: 
+  - port: 80 
+    targetPort: 80 
+    
+kubectl apply -f svc-none.yaml
+
+查看SVC，myapp-headless，cluster地址为空的
+[root@k8s-master test]# kubectl get svc
+NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+kubernetes       ClusterIP   10.10.0.1       &lt;none&gt;        443/TCP   18d
+myapp            ClusterIP   10.10.195.224   &lt;none&gt;        80/TCP    15m
+myapp-headless   ClusterIP   None            &lt;none&gt;        80/TCP    47s
+
+当SVC创建成功，会写入coredns中，查看coredns地址
+[root@k8s-master test]# kubectl get pods -n kube-system  -o wide|grep coredns
+coredns-5787695b7f-jl48j                     1/1     Running   10         12d   10.20.36.115    192.168.10.82   &lt;none&gt;           &lt;none&gt;
+
+使用dig工具解析 
+svc名称+名称空间+SVC类型+K8S集群域名(默认cluster.local.)注意最后一个点
+[root@k8s-master test]# dig -t A myapp-headless.default.svc.final.local. @10.20.36.115 
+
+; &lt;&lt;&gt;&gt; DiG 9.9.4-RedHat-9.9.4-72.el7 &lt;&lt;&gt;&gt; -t A myapp-headless.default.svc.final.local. @10.20.36.115
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 32537
+;; flags: qr aa rd; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 2048
+;; QUESTION SECTION:
+;myapp-headless.default.svc.final.local.        IN A
+
+;; ANSWER SECTION:
+myapp-headless.default.svc.final.local. 5 IN A  10.20.169.174
+myapp-headless.default.svc.final.local. 5 IN A  10.20.169.176
+myapp-headless.default.svc.final.local. 5 IN A  10.20.169.175
+
+;; Query time: 1 msec
+;; SERVER: 10.20.36.115#53(10.20.36.115)
+;; WHEN: Tue Mar 30 14:12:55 CST 2021
+;; MSG SIZE  rcvd: 229
+</code></pre>
+<h2 id="NodePort"><a href="#NodePort" class="headerlink" title="NodePort"></a>NodePort</h2><p>nodePort 的原理在于在 node 上开了一个端口，将向该端口的流量导入到 kube-proxy，然后由 kube-proxy 进一步到给对应的 pod</p>
+<p>将内部的服务暴露给外部服务<br>多对多的关系</p>
+<pre><code class="bash">[root@k8s-master test]# cat nodeport.yaml 
+apiVersion: v1 
+kind: Service 
+metadata: 
+  name: myapp 
+  namespace: default 
+spec: 
+  type: NodePort 
+  selector: 
+    app: myapp 
+    release: stabel 
+  ports: 
+  - name: http 
+    port: 80 
+    targetPort: 80
+
+kubectl apply -f nodeort.yaml
+
+查看SVC暴露的端口
+[root@k8s-master test]# kubectl get svc
+NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes       ClusterIP   10.10.0.1       &lt;none&gt;        443/TCP        18d
+myapp            NodePort    10.10.195.224   &lt;none&gt;        80:40263/TCP   75m
+myapp-headless   ClusterIP   None            &lt;none&gt;        80/TCP         60m
+
+测试访问
+[root@k8s-master test]# curl 192.168.10.81:40263/hostname.html
+myapp-deploy-5b6f5d558b-dcp2d
+
+查看IPVS规则
+ipvsadm -Ln |grep -A3 40263
+</code></pre>
+<h2 id="LoadBalancer"><a href="#LoadBalancer" class="headerlink" title="LoadBalancer"></a>LoadBalancer</h2><p>loadBalancer 和 nodePort 其实是同一种方式。<strong>区别在于 loadBalancer 比 nodePort 多了一步，就是可以调用cloud provider 去创建 LB 来向节点导流</strong></p>
+<p>收费服务，按流量来收费，较贵<br><img src="/images/1617252200108.png"></p>
+<h2 id="ExternalName"><a href="#ExternalName" class="headerlink" title="ExternalName"></a>ExternalName</h2><p>这种类型的 Service 通过返回 CNAME 和它的值，可以将服务映射到 externalName 字段的内容( 例如：hub.final.com)。ExternalName Service 是 Service 的特例，它没有 selector，也没有定义任何的端口和 Endpoint。相反的，对于运行在集群外部的服务，它通过返回该外部服务的别名这种方式来提供服务</p>
+<pre><code class="bash">[root@k8s-master test]# cat ex.yaml 
+kind: Service 
+apiVersion: v1 
+metadata: 
+  name: my-service-1
+  namespace: default 
+spec: 
+  type: ExternalName 
+  externalName: hub.final.com    #当然也可以修改为IP
+  
+ kubectl apply -f ex.yaml 
+
+[root@k8s-master test]# kubectl get svc|grep Ext
+my-service-1     ExternalName   &lt;none&gt;          hub.final.com   &lt;none&gt;         4m20s
+
+测试验证别名记录
+[root@k8s-master test]#  dig -t A my-service-1.default.svc.final.local. @10.20.36.74            
+; &lt;&lt;&gt;&gt; DiG 9.9.4-RedHat-9.9.4-72.el7 &lt;&lt;&gt;&gt; -t A my-service-1.default.svc.final.local. @10.20.36.74
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 58988
+;; flags: qr aa rd; QUERY: 1, ANSWER: 7, AUTHORITY: 0, ADDITIONAL: 1
+;; WARNING: recursion requested but not available
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 2048
+;; QUESTION SECTION:
+;my-service-1.default.svc.final.local. IN A
+
+;; ANSWER SECTION:
+my-service-1.default.svc.final.local. 5 IN CNAME hub.final.com.    #查看CNAME
+hub.final.com.          5       IN      A       45.79.19.196
+hub.final.com.          5       IN      A       45.33.23.183
+hub.final.com.          5       IN      A       45.56.79.23
+hub.final.com.          5       IN      A       45.33.2.79
+hub.final.com.          5       IN      A       198.58.118.167
+hub.final.com.          5       IN      A       96.126.123.244
+
+;; Query time: 410 msec
+;; SERVER: 10.20.36.74#53(10.20.36.74)
+;; WHEN: Thu Apr 01 12:48:08 CST 2021
+;; MSG SIZE  rcvd: 302
+</code></pre>
+<p>当查询主机 my-service.defalut.svc.cluster.local ( SVC_NAME.NAMESPACE.svc.cluster.local )时，集群的 DNS 服务将返回一个值 my.database.example.com 的 <strong>CNAME 记录</strong>（别名）。访问这个服务的工作方式和其他的相同，唯一不同的是重定向发生在 DNS 层，而且不会进行代理或转发</p>
+<h2 id="Ingress-Nginx"><a href="#Ingress-Nginx" class="headerlink" title="Ingress-Nginx"></a>Ingress-Nginx</h2><p>Ingress-Nginx github 地址：<a target="_blank" rel="noopener" href="https://github.com/kubernetes/ingress-nginx">https://github.com/kubernetes/ingress-nginx</a><br>Ingress-Nginx 官方网站：<a target="_blank" rel="noopener" href="https://kubernetes.github.io/ingress-nginx/">https://kubernetes.github.io/ingress-nginx/</a> </p>
+<p><img src="/images/1617759010844.png"></p>
+<p>基于不同域名访问不同的POD<br>认证</p>
+<p>Ingress HTTP 代理访问<br>deployment、Service、Ingress Yaml 文件</p>
+<p>Ingress HTTPS 代理访问<br>创建证书，以及 cert 存储方式</p>
+<p>Nginx 进行 BasicAuth</p>
+<p>Nginx 进行重写<br>| 名称                                             | 描述                                    | 值  |<br>|————————————————|—————————————|—-|<br>| nginx.ingress.kubernetes.io/rewrite-target     | 必须重定向流量的目标URI                         | 串  |<br>| nginx.ingress.kubernetes.io/ssl-redirect       | 指示位置部分是否仅可访问SSL（当Ingress包含证书时默认为True） | 布尔 |<br>| nginx.ingress.kubernetes.io/force-ssl-redirect | 即使Ingress未启用TLS，也强制重定向到HTTPS          | 布尔 |<br>| nginx.ingress.kubernetes.io/app-root           | 定义Controller必须重定向的应用程序根，如果它在’/‘上下文中   | 串  |<br>| nginx.ingress.kubernetes.io/use-regex          | 指示Ingress上定义的路径是否使用正则表达式              | 布尔 |</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>若想访问此服务，使用coredns访问<br>kubectl get pod -n kube-system</p>
+<p>dig -t A svnname.svc.clustername@</p>
+<p>无头服务，依然可以使用域名的方式来访问POD</p>
+<p>node port<br>当前物理机暴露端口，别人可以通过此端口来访问</p>
+<p>externalname<br>SVC通过CNAME，内部</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>kubernets----Service6</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">3.1k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="Final233">Final233</a></p>
+    <p><span class="copy-title">发布时间:</span>2021-07-09, 15:05:00</p>
+    <p><span class="copy-title">最后更新:</span>2021-07-09, 15:05:33</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2021/07/09/kubernetes----Service6/" title="kubernets----Service6">http://example.com/2021/07/09/kubernetes----Service6/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2019-2063 Final233
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
